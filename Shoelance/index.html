@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <link rel="stylesheet" href="src/css/clases.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Document</title>
+</head>
+<body >
+    <header class="container">
+        <nav class="flex justify-between items-center">
+            <div>
+                <img src="src/img/icono-reto.png" class="w-6" alt="">
+            </div>
+            <div class="flex gap-medium fs-4">
+                <a href="" class="text-black py-4"><sl-icon name="search"></sl-icon></a>
+                <a href="" class="text-black py-4"><sl-icon name="person"></sl-icon></a>
+                <a href="" class="text-black py-4"><sl-icon name="bag"></sl-icon></a>
+                <a href="" class="text-black py-4"><sl-icon name="heart"></sl-icon></a>
+            </div>
+        </nav>
+        <nav class="flex justify-around by-solid b-05 py-3 fs-2 fw-semibold">
+                <a href="" class="text-black decoration-none">HOME</a>
+                <a href="" class="text-black decoration-none">STORE</a>
+                <a href="" class="text-black decoration-none">ACCESORIES</a>
+                <a href="" class="text-black decoration-none">BRAND</a>
+                <a href="" class="text-black decoration-none">PAGES</a>
+                <a href="" class="text-black decoration-none">ABOUT US</a>
+                <a href="" class="text-black decoration-none">NEW</a>
+                <a href="" class="text-black decoration-none">CONTACT US</a>
+
+        </nav>
+       <nav class="flex justify-around fs-2 pt-6 pb-2 animation-overview">
+            <a href="" class="text-secondary-400 decoration-none fs-1 fw-bold" ><sl-animation name="bounce" duration="2000" play><sl-icon name="truck" class="text-warning-500 fs-4"></sl-icon></sl-animation> FREE SHIPPING</a>
+            <a href="" class="text-secondary-400 decoration-none fs-1 fw-bold" ><sl-animation name="jello" duration="2000" play><sl-icon name="credit-card-2-front" class="text-warning-500 fs-4"></sl-icon></sl-animation> 100% MONEY BACK</a>
+            <a href="" class="text-secondary-400 decoration-none fs-1 fw-bold" ><sl-animation name="flip" duration="2000" play><sl-icon name="headset" class="text-warning-500 fs-4"></sl-icon></sl-animation> SUPPORT 24/7</a>
+
+        </nav>
+    </header>
+<!-- Banner -->
+    <div class="grid grid-cols-2 justify-center items-center b-solid b-05" style="background-color: #DBD0CC;">
+        <div class="col-1 flex justify-center"><img src="src/img/SILLON-DECO4.png" class="w-half" alt=""></div>
+        <div class="col-1">
+            <h1 class="fw-bold fs-4">HOT DEALS THIS WEEK</h1>
+            <h1 class="fw-bold fs-7" style="color: #A86A3D">SALE UP 50% <br> MODERN FURNITURE</h2>
+            <sl-button variant="neutral" outline>View Now</sl-button>
+        </div>
+    </div>
+<!-- Cards -->
+    <div class="contenedor grid grid-cols-3 gap-2 justify-center item-center my-5">
+        <div class="col">
+            <div class="grid grid-cols-12 justify-center items-center radius-2" style="background-color: #c0b5b5;">
+                <div class="col-6 p-3 flex justify-center"><img src="src/img/modular.png" class="w-75" alt=""></div>
+                <div class="col-6">
+                    <h1 class="fw-bold fs-3 py-3">TODAY'S SPECIAL</h1>
+                      <sl-button variant="neutral" outline>View Now</sl-button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="grid grid-cols-12 justify-center items-center radius-2" style="background-color: #b1b1b1;">
+                <div class="col-6  p-3 flex justify-center"><img src="src/img/MESA-SILVIA-CUADRADA.png" class="w-full" alt=""></div>
+                <div class="col-6">
+                    <h1 class="fw-bold fs-3 py-3">CRAFTSMANSHIP</h1>
+                      <sl-button variant="neutral" outline>View Now</sl-button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="grid grid-cols-12 justify-center items-center radius-2" style="background-color: #b8b0ad;">
+                <div class="col-6 p-3 flex justify-center"><img src="src/img/pampa-tiza-natural-1.png" class="w-full" alt=""></div>
+                <div class="col-6">
+                    <h1 class="fw-bold fs-3 py-3">HAPPY CUSTOMERS</h1>
+                      <sl-button variant="neutral" outline>View Now</sl-button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+<!-- Footer -->
+    <footer>
+    </footer>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+</body>
+</html>
