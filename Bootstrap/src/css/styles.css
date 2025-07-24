@@ -86,3 +86,116 @@ article:hover{
     position: relative;
     z-index: 2;
 }
+
+/* Estilos para las tarjetas de productos */
+.card {
+    min-width: 250px;
+    max-width: 350px;
+    min-height: 400px;
+    max-height: 500px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Asegurar que las imágenes dentro de las tarjetas se escalen correctamente */
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+/* Estilo para el contenedor de la imagen */
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Ajustes para la barra de navegación */
+    .navbar-collapse {
+        padding: 1rem 0;
+    }
+    
+    /* Ajustes para la sección de oferta principal */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-section img {
+        width: 100% !important;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Ajustes para las tarjetas de productos */
+    .product-card {
+        margin-bottom: 2rem;
+    }
+    
+    /* Ajustes para el banner */
+    .banner-content {
+        position: static !important;
+        max-width: 100% !important;
+        margin: 1rem;
+        text-align: center;
+    }
+    
+    /* Ajustes para el footer */
+    footer .row > div {
+        margin-bottom: 2rem;
+    }
+    
+    /* Ajustes para los íconos de servicios */
+    .service-item {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .service-item i {
+        margin: 0 0 0.5rem 0 !important;
+        display: block;
+    }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .product-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .banner-content {
+        max-width: 45% !important;
+    }
+}
+
+/* Mejoras de accesibilidad y experiencia táctil */
+.nav-link, .btn {
+    transition: all 0.3s ease;
+}
+
+.nav-link:active, .btn:active {
+    transform: scale(0.95);
+}
+
+/* Asegurar que las imágenes sean responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mejoras de legibilidad */
+body {
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
