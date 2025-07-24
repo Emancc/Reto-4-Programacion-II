@@ -1,0 +1,88 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+article{
+    transition: all 0.5s;    
+}
+
+article:hover{
+    transform: scale(1.03);  
+}
+
+@keyframes move {    
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0);
+    }   
+
+}
+
+#camion {
+    animation: move 1s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes move-tarjeta {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translatex(0);
+    }
+}
+
+#tarjeta {
+    animation: move-tarjeta 1.5s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes rotate-auricular {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#auricular {
+    animation: rotate-auricular 1s ease-in-out infinite;
+    display: inline-block;
+}
+
+.fondoimagen{
+    position: relative;
+    background-image:url('../img/jarro.png');
+    background-size: cover;
+    background-position: center;
+}
+.fondoimagen2{
+    position: relative;
+    background-image:url('../img/velador.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card-body {
+    position: relative;
+    z-index: 2;
+}
