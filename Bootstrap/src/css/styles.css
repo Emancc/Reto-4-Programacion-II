@@ -109,12 +109,19 @@ article:hover{
     padding: 1rem;
 }
 
+.card-body {
+    overflow: auto;
+}
+
+    
+
+
 /* Estilo para el contenedor de la imagen */
 .card-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f8f9fa;
+    background-color: #e1e1e1;
 }
 
 /* Estilos responsivos */
@@ -199,3 +206,21 @@ body {
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
+
+/* Hide more-link elements on small screens */
+@media (max-width: 768px) {
+    #more-link {
+        display: none;
+    }
+    #cartelote{
+        display: none;
+    }
+    #service{
+        display: none;
+    }
+    #Oferta img{
+        display: none;
+    }
+        
+}
+

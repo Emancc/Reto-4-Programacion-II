@@ -25,14 +25,14 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarID">
                         <div class="navbar-nav fs-4 d-flex flex-row">
-                            <a class="nav-link active px-2" aria-current="page" href="#" title="Buscar"><i class="bi bi-search"></i><span class="d-none d-sm-inline ms-1">Buscar</span></a>
-                            <a class="nav-link active px-2" aria-current="page" href="#" title="Mi cuenta"><i class="bi bi-person"></i><span class="d-none d-sm-inline ms-1">Cuenta</span></a>
+                            <a class="nav-link active px-2" aria-current="page" href="#" title="Buscar"><i class="bi bi-search"></i><span class="d-none d-sm-inline ms-1"></span></a>
+                            <a class="nav-link active px-2" aria-current="page" href="#" title="Mi cuenta"><i class="bi bi-person"></i><span class="d-none d-sm-inline ms-1"></span></a>
                             <a class="nav-link active position-relative px-2" aria-current="page" href="#" title="Carrito">
                                 <i class="bi bi-bag"></i>
                                 <span class="position-absolute top-0 start-100 translate-middle p-1 bg-warning border border-light border-2 rounded-circle"></span>
-                                <span class="d-none d-sm-inline ms-1">Carrito</span>
+                                <span class="d-none d-sm-inline ms-1"></span>
                             </a>
-                            <a class="nav-link active px-2" aria-current="page" href="#" title="Favoritos"><i class="bi bi-heart"></i><span class="d-none d-sm-inline ms-1">Favoritos</span></a>
+                            <a class="nav-link active px-2" aria-current="page" href="#" title="Favoritos"><i class="bi bi-heart"></i><span class="d-none d-sm-inline ms-1"></span></a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                     </li>
                   </ul>             
             </nav>
-            <div class="container py-4 py-md-5">
+            <div id="service" class="container py-4 py-md-5">
                 <div class="row g-4 text-center">
                     <div class="col-12 col-md-4 service-item">
                         <a class="nav-link text-secondary fw-bold" href="#">
@@ -94,8 +94,8 @@
     <main>
 <!--foto grande con la oferta-->
         <section class="hero-section row m-0 justify-content-center align-items-center border border-dark border-2 py-4 py-lg-0" style="background-color: #DBD0CC;">
-            <div class="col-12 col-lg-6 text-center text-lg-start">
-                <img src="src/img/SILLON-DECO4.png" class="img-fluid" alt="Oferta especial en muebles modernos" style="max-height: 400px;">
+            <div id="Oferta" class="col-12 col-lg-6 text-center text-lg-start">
+                <img src="src/img/SILLON-DECO4.png" class="img-fluid w-75" alt="Oferta especial en muebles modernos">
             </div>
             <div class="col-12 col-lg-6 text-center text-lg-start p-5">
                 <span class="fw-bold fs-4 d-block mb-2">HOT DEALS THIS WEEK</span>
@@ -295,7 +295,7 @@
         </section> -->
 
 <!--seccion cartelote-->
-        <section class="row m-0 row-cols-2 position-relative">
+        <section id="cartelote" class="row m-0 row-cols-2 position-relative">
           <img src="src/img/dormitorio1.png" class="w-100">
           <div class="col-6 position-absolute bottom-0 m-5 p-3 rounded-3" style="background-color: #ffffffbb; max-width: 35%">
               <span class="fw-bold fs-4">BEDSHEET SETS</span>
@@ -417,8 +417,8 @@
         </section> -->
     </main>
     <footer class="container-fluid">
-      <div class="row row-cols-4 bg-dark text-white p-2 position-relative">
-        <div class="col-4 p-4">
+      <div class="row row-cols-1 row-cols-md-5 bg-dark text-white p-2 position-relative">
+        <div id="link-primary" class="col-12 col-md-4 p-4">
           <h3 class="my-5">URBAN OUTFITTERS</h3>
           <p class="d-block py-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
 
@@ -433,7 +433,7 @@
           </div>
 
         </div>
-        <div class="col-2 p-4">
+        <div id="more-link" class="col-2 p-4">
           <h5 class="my-5">SHOPPING</h5>
           <p class="text-secondary">Your cart</p>
           <p class="text-secondary">your orders</p>
@@ -441,7 +441,7 @@
           <p class="text-secondary">Wishlist items</p>
           <p class="text-secondary">Shiping details</p>
         </div>
-        <div class="col-2 p-4">
+        <div id="more-link" class="col-2 p-4">
           <h5 class="my-5">MORE LINK</h5>
           <p class="text-secondary">Blog</p>
           <p class="text-secondary">Gift Center</p>
@@ -449,7 +449,7 @@
           <p class="text-secondary">New Arrivals</p>
           <p class="text-secondary">Clearance</p>
         </div>
-        <div class="col-4 p-4">
+        <div id="more-link" class="col-4 p-4">
           <h5 class="my-5">FROM THE BLOG</h5>
           <span class="fs-2 text-secondary">26</span><span class="text-secondary"> May</span>
           <p class="d-block py-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
