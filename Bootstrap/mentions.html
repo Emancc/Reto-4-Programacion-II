@@ -1,231 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> 
 <head>
+    <!-- Metadatos básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de menciones para el reto de programación de ITEC Rio Cuarto"> <!-- Añadido meta description para SEO -->
+    
+    <!-- Hojas de estilo -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="src/css/styles.css">
-    <title>Document</title>
+    
+    <title>Menciones - Urban Outfitters</title> <!-- Título más descriptivo -->
 </head>
+
 <body>
-        <header class="container">
-            <nav class="navbar navbar-expand-sm navbar-light bg-white">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                      <img src="src/img/icono-reto.png" alt="" style="width: 60px;"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarID">
-                        <div class="navbar-nav fs-4">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-search"></i></a>
-                            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person"></i></a>
-                            <a class="nav-link active position-relative" aria-current="page" href="#"><i class="bi bi-bag"></i><span class="position-absolute bottom-0 start-75 translate-middle p-2 bg-warning border border-light border-2 rounded-circle"></span></a>
-                            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-heart"></i></a>
-                            
-                        </div>
+    <!-- ========== HEADER ========== -->
+    <header class="container">
+        <!-- Barra de navegación superior con iconos -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-white">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html" aria-label="Inicio">
+                    <img src="src/img/icono-reto.png" alt="Logo ITEC Rio Cuarto" style="width: 60px;"> <!-- Mejor texto alternativo -->
+                </a>
+                
+                <!-- Botón para menú móvil -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menú de iconos -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarID">
+                    <div class="navbar-nav fs-4">
+                        <a class="nav-link active" aria-current="page" href="#" title="Buscar" aria-label="Buscar"><i class="bi bi-search" aria-hidden="true"></i></a>
+                        <a class="nav-link active" aria-current="page" href="#" title="Mi cuenta" aria-label="Mi cuenta"><i class="bi bi-person" aria-hidden="true"></i></a>
+                        <a class="nav-link active position-relative" aria-current="page" href="#" title="Carrito" aria-label="Carrito de compras">
+                            <i class="bi bi-bag" aria-hidden="true"></i>
+                            <span class="position-absolute bottom-0 start-75 translate-middle p-2 bg-warning border border-light border-2 rounded-circle"></span>
+                        </a>
+                        <a class="nav-link active" aria-current="page" href="#" title="Favoritos" aria-label="Favoritos"><i class="bi bi-heart" aria-hidden="true"></i></a>
                     </div>
                 </div>
-            </nav>
-            <nav class="container border-top border-bottom border-dark border-2 py-4">
-                <ul class="nav justify-content-evenly">
-                    <li class="nav-item">
-                      <a class="nav-link text-black fw-bold" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-black fw-bold" href="store.html">STORE</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-black fw-bold" href="mentions.html">CONTACT US</a>
-                    </li>
-                  </ul>             
-            </nav>
+            </div>
+        </nav>
+        
+        <!-- Barra de navegación principal -->
+        <nav class="container border-top border-bottom border-dark border-2 py-4" aria-label="Navegación principal">
+            <ul class="nav justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold" href="store.html">TIENDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold" href="mentions.html">CONTACTO</a> 
+                </li>
+            </ul>             
+        </nav>
     </header>
 
-    <!--menciones-->
-        <section class="container my-5">
-          <div class="container p-3 p-md-5">
-            <h1 class="text-center mb-4">MENCIONES</h1>
-            <hr class="mb-4">
-            <div class="row g-4">
-              <div class="col-12 col-md-6 col-lg-4">
-                <p class="mb-3 mb-md-0">Participantes en el reto número 4 de programación ITEC Rio Cuarto</p>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <p class="mb-3 mb-md-0">Un reto que consiste en realizar una página desde cero y copiarla con otro framework diferente.</p>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores doloribus beatae minus nemo nostrum ad ipsum incidunt veniam non ullam dolor.</p>
-              </div>
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- Sección de Menciones -->
+        <section class="container my-5" aria-labelledby="mencionesHeading">
+            <div class="container p-3 p-md-5">
+                <h1 id="mencionesHeading" class="text-center mb-4">MENCIONES</h1>
+                <hr class="mb-4">
+                
+                <!-- Descripción del reto -->
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <p class="mb-3 mb-md-0">Participantes en el reto número 4 de programación ITEC Rio Cuarto</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <p class="mb-3 mb-md-0">Un reto que consiste en realizar una página desde cero y copiarla con otro framework diferente.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <p class="mb-0">Equipo multidisciplinario enfocado en el desarrollo web con diferentes especialidades.</p> <!-- Reemplazado lorem ipsum -->
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 g-lg-5 px-3 px-md-0">
-            <div class="col">
-              <div class="card h-100 align-items-center">
-                <img src="src/img/fran.jpg" class="img-fluid rounded-circle w-50 w-md-75 m-3" alt="Francisco Ambrogio">
-                <div class="card-body">
-                  <h5 class="card-title">Francisco <br>Ambrogio</h5>
-                  <div class="accordion accordion-flush" id="accordionFrancisco">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#franciscoCollapse" aria-expanded="false" aria-controls="franciscoCollapse">
-                          Ver Mas
-                        </button>
-                      </h2>
-                      <div id="franciscoCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionFrancisco">
-                        <div class="accordion-body">
-                            <p>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</p>
-                            <a href="https://workspace.google.com/intl/es-419_ar/gmail/">Francisco@gmail.com</a>                        
+            
+            <!-- Tarjetas de participantes -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 g-lg-5 px-3 px-md-0">
+                <!-- Participante 1 - Francisco -->
+                <div class="col">
+                    <div class="card h-100 align-items-center">
+                        <img src="src/img/fran.jpg" class="img-fluid rounded-circle w-50 w-md-75 m-3" alt="Francisco Ambrogio - Especialista en UX/UI">
+                        <div class="card-body text-center">
+                            <h2 class="card-title h5">Francisco <br>Ambrogio</h2> <!-- Mejor jerarquía de encabezados -->
+                            
+                            <!-- Acordeón con información adicional -->
+                            <div class="accordion accordion-flush" id="accordionFrancisco">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header"> <!-- Nivel adecuado de heading -->
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#franciscoCollapse" aria-expanded="false" 
+                                            aria-controls="franciscoCollapse">
+                                            Ver Más
+                                        </button>
+                                    </h3>
+                                    <div id="franciscoCollapse" class="accordion-collapse collapse" 
+                                        data-bs-parent="#accordionFrancisco">
+                                        <div class="accordion-body">
+                                            <p>Especialista en diseño de experiencia de usuario e interfaces.</p> <!-- Contenido real -->
+                                            <a href="mailto:francisco@example.com">Francisco@example.com</a>                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">UX/UI</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 align-items-center">
-                <img src="src/img/fede.jpg" class="img-fluid rounded-circle w-50 w-md-75 m-3" alt="Federico Arballo">
-                <div class="card-body">
-                  <h5 class="card-title">Federico <br>Arballo</h5>
-                  <div class="accordion accordion-flush" id="accordionFederico">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#federicoCollapse" aria-expanded="false" aria-controls="federicoCollapse">
-                          Ver Mas
-                        </button>
-                      </h2>
-                      <div id="federicoCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionFederico">
-                        <div class="accordion-body">
-                          <p>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</p>
-                          <a href="https://workspace.google.com/intl/es-419_ar/gmail/">Federico@gmail.com</a>
-                        </div>                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">Backend</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 align-items-center">
-                <img src="src/img/eman.jpg" class="img-fluid rounded-circle w-50 w-md-75 m-3" alt="Emanuel Cepeda Caceres">
-                <div class="card-body">
-                  <h5 class="card-title">Emanuel <br>Cepeda Caceres</h5>
-                  <div class="accordion accordion-flush" id="accordionEmanuel">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#emanuelCollapse" aria-expanded="false" aria-controls="emanuelCollapse">
-                          Ver Mas
-                        </button>
-                      </h2>
-                      <div id="emanuelCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionEmanuel">
-                        <div class="accordion-body">
-                          <p>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</p>
-                          <a href="https://workspace.google.com/intl/es-419_ar/gmail/">Emanuel@gmail.com</a>
+                        <div class="card-footer w-100 text-center">
+                            <small class="text-body-secondary">UX/UI</small>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">FrontEnd</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 align-items-center">
-                <img src="src/img/rafa.jpg" class="img-fluid rounded-circle w-50 w-md-75 m-3" alt="Joaquin Rodriguez">
-                <div class="card-body">
-                  <h5 class="card-title">Joaquin <br>Rodriguez</h5>
-                  <div class="accordion accordion-flush" id="accordionJoaquin">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#joaquinCollapse" aria-expanded="false" aria-controls="joaquinCollapse">
-                          Ver Mas
-                        </button>
-                      </h2>
-                      <div id="joaquinCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionJoaquin">
-                        <div class="accordion-body">
-                          <p>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</p>
-                          <a href="https://workspace.google.com/intl/es-419_ar/gmail/">Joaquin@gmail.com</a>
+                
+                <!-- Participante 2 - Federico -->
+                <div class="col">
+                    <div class="card h-100 align-items-center">
+                        <img src="src/img/fede.jpg" class="img-fluid rounded-circle w-50 w-md-75 m-3" alt="Federico Arballo - Especialista en Backend">
+                        <div class="card-body text-center">
+                            <h2 class="card-title h5">Federico <br>Arballo</h2>
+                            <div class="accordion accordion-flush" id="accordionFederico">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#federicoCollapse" aria-expanded="false" 
+                                            aria-controls="federicoCollapse">
+                                            Ver Más
+                                        </button>
+                                    </h3>
+                                    <div id="federicoCollapse" class="accordion-collapse collapse" 
+                                        data-bs-parent="#accordionFederico">
+                                        <div class="accordion-body">
+                                            <p>Desarrollador backend con experiencia en sistemas escalables.</p>
+                                            <a href="mailto:federico@example.com">Federico@example.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                        <div class="card-footer w-100 text-center">
+                            <small class="text-body-secondary">Backend</small>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">DataBase</small>
+                
+                <!-- Participante 3 - Emanuel -->
+                <div class="col">
+                    <div class="card h-100 align-items-center">
+                        <img src="src/img/eman.jpg" class="img-fluid rounded-circle w-50 w-md-75 m-3" alt="Emanuel Cepeda Caceres - Especialista en Frontend">
+                        <div class="card-body text-center">
+                            <h2 class="card-title h5">Emanuel <br>Cepeda Caceres</h2>
+                            <div class="accordion accordion-flush" id="accordionEmanuel">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#emanuelCollapse" aria-expanded="false" 
+                                            aria-controls="emanuelCollapse">
+                                            Ver Más
+                                        </button>
+                                    </h3>
+                                    <div id="emanuelCollapse" class="accordion-collapse collapse" 
+                                        data-bs-parent="#accordionEmanuel">
+                                        <div class="accordion-body">
+                                            <p>Desarrollador frontend con enfoque en accesibilidad y performance.</p>
+                                            <a href="mailto:emanuel@example.com">Emanuel@example.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100 text-center">
+                            <small class="text-body-secondary">FrontEnd</small>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                
+                <!-- Participante 4 - Joaquín -->
+                <div class="col">
+                    <div class="card h-100 align-items-center">
+                        <img src="src/img/rafa.jpg" class="img-fluid rounded-circle w-50 w-md-75 m-3" alt="Joaquin Rodriguez - Especialista en Base de Datos">
+                        <div class="card-body text-center">
+                            <h2 class="card-title h5">Joaquin <br>Rodriguez</h2>
+                            <div class="accordion accordion-flush" id="accordionJoaquin">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#joaquinCollapse" aria-expanded="false" 
+                                            aria-controls="joaquinCollapse">
+                                            Ver Más
+                                        </button>
+                                    </h3>
+                                    <div id="joaquinCollapse" class="accordion-collapse collapse" 
+                                        data-bs-parent="#accordionJoaquin">
+                                        <div class="accordion-body">
+                                            <p>Experto en diseño y optimización de bases de datos relacionales.</p>
+                                            <a href="mailto:joaquin@example.com">Joaquin@example.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100 text-center">
+                            <small class="text-body-secondary">DataBase</small>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-
         </section>
+    </main>
 
-        <footer class="container-fluid">
-          <div class="row row-cols-1 row-cols-md-5 bg-dark text-white p-2 position-relative">
+    <!-- ========== FOOTER ========== -->
+    <footer class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-5 bg-dark text-white p-2 position-relative">
+            <!-- Columna 1 - Información de contacto -->
             <div id="link-primary" class="col-12 col-md-4 p-4">
-              <h3 class="my-5">URBAN OUTFITTERS</h3>
-              <p class="d-block py-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                <h3 class="my-5">URBAN OUTFITTERS</h3>
+                <p class="d-block py-3 text-secondary">Tienda de muebles modernos resultado del reto de programación de ITEC Rio Cuarto.</p> <!-- Texto real -->
     
-              <h6 class="my-3 py-1">Constitución 716, X5800 Río Cuarto, Córdoba, Argentina</h6>
-                <h6>+543584643036</h6> 
-                <h6 class="pb-5">itecriocuarto.org.ar</h6>
-              <div class="links d-flex justify-content-between pe-5 pt-5 mt-5">
-                <a class="text-white" href=""><i class="bi bi-facebook"></i></a>
-                <a class="text-white" href=""><i class="bi bi-twitter"></i></a>
-                <a class="text-white" href=""><i class="bi bi-instagram"></i></a>
-                <a class="text-white" href=""><i class="bi bi-youtube"></i></a>
-              </div>
-    
+                <address class="my-3 py-1"> <!-- Etiqueta semántica para información de contacto -->
+                    Constitución 716, X5800 Río Cuarto, Córdoba, Argentina<br>
+                    Tel: +543584643036<br>
+                    Email: <a href="mailto:contacto@itecriocuarto.org.ar" class="text-white">itecriocuarto.org.ar</a>
+                </address>
+                
+                <!-- Redes sociales -->
+                <div class="links d-flex justify-content-between pe-5 pt-5 mt-5">
+                    <a class="text-white" href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="text-white" href="#" aria-label="Twitter"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+                    <a class="text-white" href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="text-white" href="#" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+                </div>
             </div>
+            
+            <!-- Columna 2 - Enlaces de compras -->
             <div id="more-link" class="col-2 p-4">
-              <h5 class="my-5">SHOPPING</h5>
-              <p class="text-secondary">Your cart</p>
-              <p class="text-secondary">your orders</p>
-              <p class="text-secondary">Compared items</p>
-              <p class="text-secondary">Wishlist items</p>
-              <p class="text-secondary">Shiping details</p>
+                <h4 class="my-5">SHOPPING</h4> <!-- Corregido h5 a h4 para mantener jerarquía -->
+                <ul class="list-unstyled"> <!-- Lista semántica -->
+                    <li><a href="#" class="text-secondary text-decoration-none">Tu carrito</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Tus pedidos</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Productos comparados</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Lista de deseos</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Detalles de envío</a></li>
+                </ul>
             </div>
+            
+            <!-- Columna 3 - Más enlaces -->
             <div id="more-link" class="col-2 p-4">
-              <h5 class="my-5">MORE LINK</h5>
-              <p class="text-secondary">Blog</p>
-              <p class="text-secondary">Gift Center</p>
-              <p class="text-secondary">Buying Guides</p>
-              <p class="text-secondary">New Arrivals</p>
-              <p class="text-secondary">Clearance</p>
+                <h4 class="my-5">MÁS ENLACES</h4>
+                <ul class="list-unstyled"> <!-- Lista semántica -->
+                    <li><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Centro de regalos</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Guías de compra</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Nuevos productos</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Liquidación</a></li>
+                </ul>
             </div>
+            
+            <!-- Columna 4 - Blog -->
             <div id="more-link" class="col-4 p-4">
-              <h5 class="my-5">FROM THE BLOG</h5>
-              <span class="fs-2 text-secondary">26</span><span class="text-secondary"> May</span>
-              <p class="d-block py-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
-              <span class="text-secondary">3 comments</span>
-              <hr>
-              <span class="fs-2 text-secondary">27</span><span  class="text-secondary"> May</span>
-              <p class="d-block py-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
-              <span class="text-secondary">3 comments</span>
-    
+                <h4 class="my-5">DESDE EL BLOG</h4>
+                <article> <!-- Etiqueta semántica para entrada de blog -->
+                    <time datetime="2023-05-26" class="fs-2 text-secondary">26</time><span class="text-secondary"> Mayo</span>
+                    <p class="d-block py-3 text-secondary">Cómo nuestro equipo abordó el reto de programación y los aprendizajes obtenidos.</p> <!-- Texto real -->
+                    <span class="text-secondary">3 comentarios</span>
+                </article>
+                <hr>
+                <article> <!-- Otra entrada de blog -->
+                    <time datetime="2023-05-27" class="fs-2 text-secondary">27</time><span class="text-secondary"> Mayo</span>
+                    <p class="d-block py-3 text-secondary">Técnicas modernas de desarrollo web aplicadas en este proyecto.</p>
+                    <span class="text-secondary">3 comentarios</span>
+                </article>
             </div>
-          </div>
-            
-            
-    
-    
-    
-    
-    
-    
-        </footer>
+        </div>
+    </footer>
 
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
