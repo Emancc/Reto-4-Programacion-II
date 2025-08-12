@@ -33,64 +33,28 @@
         <!-- Main Navigation -->
         <nav class="main-nav">
             <sl-tab-group class="menu">
-                <sl-tab slot="nav" ><a href="nose.html">INICIO</a></sl-tab>
+                <sl-tab slot="nav" ><a href="index.html">INICIO</a></sl-tab>
                 <sl-tab slot="nav" ><a href="store.html">TIENDA</a></sl-tab>
-                <sl-tab slot="nav" ><a href="store.html">CONTACTO</a></sl-tab>
+                <sl-tab slot="nav" ><a href="mentions.html">CONTACTO</a></sl-tab>
             </sl-tab-group>
         </nav>
     </header>
 
     <main>
             <!-- Menciones Section -->
-    <section class="container" style="padding: var(--sl-spacing-3x-large) 0;">
-        <div style="padding: var(--sl-spacing-large) var(--sl-spacing-3x-large);">
-            <h1 style="
-                text-align: center;
-                margin-bottom: var(--sl-spacing-large);
-                font-size: var(--sl-font-size-2x-large);
-                font-weight: var(--sl-font-weight-bold);
-            ">MENCIONES</h1>
+    <section class="container">
+            <h1>MENCIONES</h1>
             
             <sl-divider style="margin-bottom: var(--sl-spacing-large);"></sl-divider>
-            
-            <div style="
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: var(--sl-spacing-large);
-                margin-bottom: var(--sl-spacing-2x-large);
-            ">
-            </div>
-        </div>
 
         <!-- Team Cards -->
-        <div style="
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--sl-spacing-large) var(--sl-spacing-x-large);
-            padding: 0 var(--sl-spacing-large);
-        ">
+        <div class="products-grid">
             <!-- Francisco Ambrogio -->
-            <sl-card style="
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                --sl-panel-border-radius: var(--sl-border-radius-medium);
-            ">
-                <img src="/shoelace3.0/img/fran.jpg" alt="Francisco Ambrogio" style="
-                    width: 50%;
-                    aspect-ratio: 1;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    margin: var(--sl-spacing-large) auto;
-                ">
+            <sl-card class="mention-cards">
+                <img class="mention-img" src="src/img/fran.jpg" alt="Francisco Ambrogio">
                 
-                <div style="flex: 1; padding: 0 var(--sl-spacing-medium);">
-                    <h5 style="
-                        font-size: var(--sl-font-size-large);
-                        font-weight: var(--sl-font-weight-semibold);
-                        margin-bottom: var(--sl-spacing-medium);
-                    ">Francisco<br>Ambrogio</h5>
+                <div class="mention-text">
+                    <h5>Francisco<br>Ambrogio</h5>
                     
                     <sl-details summary="Ver Mas" style="margin-bottom: var(--sl-spacing-medium);">
                         <p style="margin-bottom: var(--sl-spacing-medium);">
@@ -102,37 +66,17 @@
                     </sl-details>
                 </div>
                 
-                <div slot="footer" style="
-                    padding: var(--sl-spacing-small);
-                    background: var(--sl-color-neutral-50);
-                    border-top: 1px solid var(--sl-color-neutral-200);
-                ">
+                <div slot="footer" class="mention-footer">
                     <small style="color: var(--sl-color-neutral-600);">UX/UI</small>
                 </div>
             </sl-card>
 
             <!-- Federico Arballo -->
-            <sl-card style="
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                --sl-panel-border-radius: var(--sl-border-radius-medium);
-            ">
-                <img src="/shoelace3.0/img/fede.jpg" alt="Federico Arballo" style="
-                    width: 50%;
-                    aspect-ratio: 1;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    margin: var(--sl-spacing-large) auto;
-                ">
+            <sl-card class="mention-cards">
+                <img class="mention-img" src="src/img/fede.jpg" alt="Federico Arballo">
                 
-                <div style="flex: 1; padding: 0 var(--sl-spacing-medium);">
-                    <h5 style="
-                        font-size: var(--sl-font-size-large);
-                        font-weight: var(--sl-font-weight-semibold);
-                        margin-bottom: var(--sl-spacing-medium);
-                    ">Federico<br>Arballo</h5>
+                <div class="mention-text">
+                    <h5>Federico<br>Arballo</h5>
                     
                     <sl-details summary="Ver Mas" style="margin-bottom: var(--sl-spacing-medium);">
                         <p style="margin-bottom: var(--sl-spacing-medium);">
@@ -144,37 +88,17 @@
                     </sl-details>
                 </div>
                 
-                <div slot="footer" style="
-                    padding: var(--sl-spacing-small);
-                    background: var(--sl-color-neutral-50);
-                    border-top: 1px solid var(--sl-color-neutral-200);
-                ">
+                <div slot="footer" class="mention-footer">
                     <small style="color: var(--sl-color-neutral-600);">Backend</small>
                 </div>
             </sl-card>
 
             <!-- Emanuel Cepeda Caceres -->
-            <sl-card style="
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                --sl-panel-border-radius: var(--sl-border-radius-medium);
-            ">
-                <img src="/shoelace3.0/img/eman.jpg" alt="Emanuel Cepeda Caceres" style="
-                    width: 50%;
-                    aspect-ratio: 1;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    margin: var(--sl-spacing-large) auto;
-                ">
+            <sl-card class="mention-cards">
+                <img class="mention-img" src="src/img/eman.jpg" alt="Emanuel Cepeda Caceres">
                 
-                <div style="flex: 1; padding: 0 var(--sl-spacing-medium);">
-                    <h5 style="
-                        font-size: var(--sl-font-size-large);
-                        font-weight: var(--sl-font-weight-semibold);
-                        margin-bottom: var(--sl-spacing-medium);
-                    ">Emanuel<br>Cepeda Caceres</h5>
+                <div class="mention-text">
+                    <h5>Emanuel<br>Cepeda Caceres</h5>
                     
                     <sl-details summary="Ver Mas" style="margin-bottom: var(--sl-spacing-medium);">
                         <p style="margin-bottom: var(--sl-spacing-medium);">
@@ -186,37 +110,17 @@
                     </sl-details>
                 </div>
                 
-                <div slot="footer" style="
-                    padding: var(--sl-spacing-small);
-                    background: var(--sl-color-neutral-50);
-                    border-top: 1px solid var(--sl-color-neutral-200);
-                ">
+                <div slot="footer" class="mention-footer">
                     <small style="color: var(--sl-color-neutral-600);">FrontEnd</small>
                 </div>
             </sl-card>
 
             <!-- Joaquin Rodriguez -->
-            <sl-card style="
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                --sl-panel-border-radius: var(--sl-border-radius-medium);
-            ">
-                <img src="/shoelace3.0/img/rafa.jpg" alt="Joaquin Rodriguez" style="
-                    width: 50%;
-                    aspect-ratio: 1;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    margin: var(--sl-spacing-large) auto;
-                ">
+            <sl-card class="mention-cards">
+                <img class="mention-img" src="src/img/rafa.jpg" alt="Joaquin Rodriguez" >
                 
-                <div style="flex: 1; padding: 0 var(--sl-spacing-medium);">
-                    <h5 style="
-                        font-size: var(--sl-font-size-large);
-                        font-weight: var(--sl-font-weight-semibold);
-                        margin-bottom: var(--sl-spacing-medium);
-                    ">Joaquin<br>Rodriguez</h5>
+                <div class="mention-text" style="flex: 1; padding: 0 var(--sl-spacing-medium);">
+                    <h5>Joaquin<br>Rodriguez</h5>
                     
                     <sl-details summary="Ver Mas" style="margin-bottom: var(--sl-spacing-medium);">
                         <p style="margin-bottom: var(--sl-spacing-medium);">
@@ -228,11 +132,7 @@
                     </sl-details>
                 </div>
                 
-                <div slot="footer" style="
-                    padding: var(--sl-spacing-small);
-                    background: var(--sl-color-neutral-50);
-                    border-top: 1px solid var(--sl-color-neutral-200);
-                ">
+                <div slot="footer" class="mention-footer">
                     <small style="color: var(--sl-color-neutral-600);">DataBase</small>
                 </div>
             </sl-card>

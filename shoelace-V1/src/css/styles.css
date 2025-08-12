@@ -315,6 +315,43 @@ sl-button:hover {
     font-size: 1rem;
 }
 
+.mention-cards{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    --sl-panel-border-radius: var(--sl-border-radius-medium);
+}
+
+
+.mention-img{
+    width: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: var(--sl-spacing-large) auto;
+
+}
+
+.mention-text{
+    flex: 1; 
+    padding: 0 var(--sl-spacing-medium);
+}
+
+.mention-text h5{
+    font-size: var(--sl-font-size-large);
+    font-weight: var(--sl-font-weight-semibold);
+    margin-bottom: var(--sl-spacing-medium)
+}
+
+.mention-footer{
+    font-size: var(--sl-font-size-large);
+    font-weight: var(--sl-font-weight-semibold);
+    margin-bottom: var(--sl-spacing-medium)
+}
+
+
+
 .footer {
     background: #333;
     color: white;
