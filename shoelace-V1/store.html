@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Muebles</title>
+    
+    <!-- Shoelace CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace.js"></script>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="container">
+        <!-- Top Navigation -->
+        <nav class="navbar">
+            <div class="navbar-content">
+                <a href="#" class="navbar-brand">
+                    <img src="/Bootstrap/src/img/icono-reto.png" alt="Logo">
+                </a>
+                <div class="navbar-icons">
+                    <sl-icon name="search" title="Buscar"></sl-icon>
+                    <sl-icon name="person" title="Mi cuenta"></sl-icon>
+                    <div class="cart-badge">
+                        <sl-icon name="bag" title="Carrito"></sl-icon>
+                    </div>
+                    <sl-icon name="heart" title="Favoritos"></sl-icon>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <sl-tab-group class="menu">
+                <sl-tab slot="nav" ><a href="nose.html">INICIO</a></sl-tab>
+                <sl-tab slot="nav" ><a href="store.html">TIENDA</a></sl-tab>
+                <sl-tab slot="nav" ><a href="store.html">CONTACTO</a></sl-tab>
+            </sl-tab-group>
+        </nav>
+    </header>
+
+    <main>
+         <!-- Store Section -->
+    <section class="container">
+
+        <h1>STORE</h1>
+        
+        <sl-divider style="margin-bottom: var(--sl-spacing-large);"></sl-divider>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <div class="card-principal">
+                <h5>DECOR</h5>
+                <p>
+                    Lorem ipsum dolor halkjhlka haoñiuhja lojsloñaiha  okhalk ñlkhjalña kjhal lkahjl  sit  ullam minima uiloqui sdñolakhsa aspojua asooasp p`sadlkj  quibusdamste veniam minima neque consectetur, veritatis quam! Ipsam nihil optio ratione voluptas.
+                </p>
+                <sl-button variant="default" outline>VIEW ALL</sl-button>
+            </div>
+                
+            <sl-card class="card-overview">
+                <img
+                slot="image"
+                src="./src/img/sillon.png"
+                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                />
+            
+                <strong>Sillon</strong><br />
+                This kitten is as cute as he is playful. Bring him home today!<br />
+                <small>6 weeks old</small>
+            
+                <div slot="footer">
+                <sl-button variant="primary" pill>More Info</sl-button>
+                <sl-rating></sl-rating>
+                </div>
+            </sl-card>
+
+            <sl-card class="card-overview">
+                <img
+                slot="image"
+                src="./src/img/cuadros.webp"
+                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                />
+            
+                <strong>Cuadros</strong><br />
+                This kitten is as cute as he is playful. Bring him home today!<br />
+                <small>6 weeks old</small>
+            
+                <div slot="footer">
+                <sl-button variant="primary" pill>More Info</sl-button>
+                <sl-rating></sl-rating>
+                </div>
+            </sl-card>
+
+            <sl-card class="card-overview">
+                <img
+                slot="image"
+                src="./src/img/jarron-flores.png"
+                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                />
+            
+                <strong>Jarron de flores</strong><br />
+                This kitten is as cute as he is playful. Bring him home today!<br />
+                <small>6 weeks old</small>
+            
+                <div slot="footer">
+                <sl-button variant="primary" pill>More Info</sl-button>
+                <sl-rating></sl-rating>
+                </div>
+            </sl-card>
+
+            <sl-card class="card-overview">
+                <img
+                slot="image"
+                src="./src/img/saco.png"
+                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                />
+            
+                <strong>Saco</strong><br />
+                This kitten is as cute as he is playful. Bring him home today!<br />
+                <small>6 weeks old</small>
+            
+                <div slot="footer">
+                <sl-button variant="primary" pill>More Info</sl-button>
+                <sl-rating></sl-rating>
+                </div>
+            </sl-card>
+
+            <sl-card class="card-overview">
+                <img
+                slot="image"
+                src="./src/img/mesita-luz.webp"
+                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                />
+            
+                <strong>Mesita de luz</strong><br />
+                This kitten is as cute as he is playful. Bring him home today!<br />
+                <small>6 weeks old</small>
+            
+                <div slot="footer">
+                <sl-button variant="primary" pill>More Info</sl-button>
+                <sl-rating></sl-rating>
+                </div>
+            </sl-card>
+
+            <sl-card class="card-overview">
+                <img
+                slot="image"
+                src="./src/img/mate.webp"
+                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+                />
+            
+                <strong>Mate</strong><br />
+                This kitten is as cute as he is playful. Bring him home today!<br />
+                <small>6 weeks old</small>
+            
+                <div slot="footer">
+                <sl-button variant="primary" pill>More Info</sl-button>
+                <sl-rating></sl-rating>
+                </div>
+            </sl-card>
+
+            <div class="card-principal card-clients">
+                    <h5>OUR CLIENTS</h5>
+                    <p>
+                        Lorem ipsum dolor halkjhlka haoñiuhja lojsloñaiha  okhalk ñlkhjalña kjhal lkahjl  sit  ullam minima uiloqui sdñolakhsa aspojua asooasp p`sadlkj  quibusdamste veniam minima neque consectetur, veritatis quam! Ipsam nihil optio ratione voluptas.
+                    </p>
+                    <sl-button variant="default" outline>VIEW ALL</sl-button>
+            </div>
+        </div>
+
+    </section>
+
+        <sl-divider></sl-divider>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>URBAN OUTFITTERS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                    <h6>Constitución 716, X5800 Río Cuarto, Córdoba, Argentina</h6>
+                    <h6>+543584643036</h6>
+                    <h6>itecriocuarto.org.ar</h6>
+                    <div class="social-links">
+                        <sl-icon name="facebook"></sl-icon>
+                        <sl-icon name="twitter"></sl-icon>
+                        <sl-icon name="instagram"></sl-icon>
+                        <sl-icon name="youtube"></sl-icon>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h5>SHOPPING</h5>
+                    <p>Your cart</p>
+                    <p>Your orders</p>
+                    <p>Compared items</p>
+                    <p>Wishlist items</p>
+                    <p>Shipping details</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>MORE LINK</h5>
+                    <p>Blog</p>
+                    <p>Gift Center</p>
+                    <p>Buying Guides</p>
+                    <p>New Arrivals</p>
+                    <p>Clearance</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>FROM THE BLOG</h5>
+                    <div class="blog-entry">
+                        <span class="blog-date">26</span><span> May</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                        <span>3 comments</span>
+                    </div>
+                    <sl-divider></sl-divider>
+                    <div class="blog-entry">
+                        <span class="blog-date">27</span><span> May</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                        <span>3 comments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

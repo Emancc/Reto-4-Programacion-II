@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Muebles</title>
+    
+    <!-- Shoelace CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="container">
+        <!-- Top Navigation -->
+        <nav class="navbar">
+            <div class="navbar-content">
+                <a href="#" class="navbar-brand">
+                    <img src="/Bootstrap/src/img/icono-reto.png" alt="Logo">
+                </a>
+                <div class="navbar-icons">
+                    <sl-icon name="search" title="Buscar"></sl-icon>
+                    <sl-icon name="person" title="Mi cuenta"></sl-icon>
+                    <div class="cart-badge">
+                        <sl-icon name="bag" title="Carrito"></sl-icon>
+                    </div>
+                    <sl-icon name="heart" title="Favoritos"></sl-icon>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <sl-tab-group class="menu">
+                <sl-tab slot="nav" ><a href="nose.html">INICIO</a></sl-tab>
+                <sl-tab slot="nav" ><a href="store.html">TIENDA</a></sl-tab>
+                <sl-tab slot="nav" ><a href="store.html">CONTACTO</a></sl-tab>
+            </sl-tab-group>
+        </nav>
+
+        <!-- Services Section -->
+        <div class="services-section">
+            <div class="services-grid">
+                <a href="#" class="service-item">
+                    <sl-animation name="bounce" duration="2000" play><sl-icon class="icono" name="truck"></sl-icon></sl-animation>
+                    <span>ENVIO GRATIS</span>
+                    <small>En compras superiores a $50.000</small>
+                </a>
+                <a href="#" class="service-item">
+                    <sl-animation name="jello" duration="2000" play><sl-icon class="icono" name="credit-card-2-front"></sl-icon></sl-animation>
+                    <span>100% SIN INTERES</span>
+                    <small>Garantía de devolución de 30 días</small>
+                </a>
+                <a href="#" class="service-item">
+                    <sl-animation name="flip" duration="2000" play><sl-icon class="icono" name="headset"></sl-icon></sl-animation>
+                    <span>SOPORTE 24/7</span>
+                    <small>Atención al cliente siempre disponible</small>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-image">
+                <img src="/Bootstrap/src/img/SILLON-DECO4.png" alt="Oferta especial en muebles modernos">
+            </div>
+            <div class="hero-content">
+                <span class="offer-label">OFERTA DE LA SEMANA</span>
+                <h1>EN VENTA 50%<br>MUEBLES MODERNOS</h1>
+                <sl-button variant="dark" size="large" outline>Ver Ofertas</sl-button>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="container" style="padding: var(--sl-spacing-3x-large) 0">
+            <div style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: var(--sl-spacing-large);
+            ">
+                <!-- Product 1 -->
+                <sl-card class="product-card card-1">
+                    <div class="product-image">
+                        <img src="/Bootstrap/src/img/MESA-SILVIA-CUADRADA.png" 
+                        alt="Mesa de algarrobo" style="max-width: 100%; max-height: 250px; object-fit: contain;">
+                    </div>
+                    <div class="product-info">
+                        <h6>MESA ALGARROBO</h6>
+                        <sl-button variant="dark" outline size="large">Ver Detalles</sl-button>
+                    </div>
+                </sl-card>
+
+                <!-- Product 2 -->
+                <sl-card class="product-card card-2">
+                    <div class="product-image">
+                        <img src="/Bootstrap/src/img/pampa-tiza-natural-1.png" 
+                        alt="Silla Pampa" style="max-width: 100%; max-height: 250px; object-fit: contain;">
+                    </div>
+                    <div class="product-info">
+                        <h6>SILLA PAMPA</h6>
+                        <sl-button variant="dark" outline size="large">Ver Detalles</sl-button>
+                    </div>
+                </sl-card>
+
+                <!-- Product 3 -->
+                <sl-card class="product-card card-3">
+                    <div class="product-image">
+                        <img src="/Bootstrap/src/img/modular.png" 
+                        alt="Mueble modular" style="max-width: 100%; max-height: 250px; object-fit: contain;">
+                    </div>
+
+                    <div class="product-info">
+                        <h6>MODULAR DE LIVING</h6>
+                        <sl-button variant="dark" outline size="large">Ver Detalles</sl-button>
+                    </div>
+                </sl-card>
+            </div>
+        </section>
+
+        <!-- Promotional Section -->
+        <section class="promo-section">
+            <img src="/Bootstrap/src/img/dormitorio1.png" alt="Dormitorio" class="promo-image">
+            <div class="promo-content">
+                <span>JUEGOS DE SÁBANAS</span>
+                <h4>$50.00 <span class="original-price">$220.00</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel mollitia error laudantium at consectetur iure ea dolorem? Quidem.</p>
+                <sl-button variant="dark" outline style="margin-top: 1rem;">Ver Ahora</sl-button>
+            </div>
+        </section>
+
+        <sl-divider></sl-divider>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>URBAN OUTFITTERS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                    <h6>Constitución 716, X5800 Río Cuarto, Córdoba, Argentina</h6>
+                    <h6>+543584643036</h6>
+                    <h6>itecriocuarto.org.ar</h6>
+                    <div class="social-links">
+                        <sl-icon name="facebook"></sl-icon>
+                        <sl-icon name="twitter"></sl-icon>
+                        <sl-icon name="instagram"></sl-icon>
+                        <sl-icon name="youtube"></sl-icon>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h5>SHOPPING</h5>
+                    <p>Your cart</p>
+                    <p>Your orders</p>
+                    <p>Compared items</p>
+                    <p>Wishlist items</p>
+                    <p>Shipping details</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>MORE LINK</h5>
+                    <p>Blog</p>
+                    <p>Gift Center</p>
+                    <p>Buying Guides</p>
+                    <p>New Arrivals</p>
+                    <p>Clearance</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>FROM THE BLOG</h5>
+                    <div class="blog-entry">
+                        <span class="blog-date">26</span><span> May</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                        <span>3 comments</span>
+                    </div>
+                    <sl-divider></sl-divider>
+                    <div class="blog-entry">
+                        <span class="blog-date">27</span><span> May</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                        <span>3 comments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
