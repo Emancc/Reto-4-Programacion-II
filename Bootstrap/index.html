@@ -1,357 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> 
 <head>
+    <!-- Metadatos básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Tienda de muebles modernos con ofertas especiales"> <!-- Añadido meta description para SEO -->
+    
+    <!-- Hojas de estilo y fuentes -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="src/css/styles.css">
-    <!-- Bootstrap JS y dependencias -->
+    
+    <!-- Scripts de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
-    <title>Venta de Muebles</title>
+    
+    <title>Inicio - Urban Outfitters</title> <!-- Título más descriptivo -->
 </head>
+
 <body>
-<!--tripre navbar del comienzo-->
+    <!-- ========== HEADER ========== -->
     <header class="container">
-            <nav class="navbar navbar-expand-sm navbar-light bg-white">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                      <img src="src/img/icono-reto.png" alt="" style="width: 60px;"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarID">
-                        <div class="navbar-nav fs-4 d-flex flex-row">
-                            <a class="nav-link active px-2" aria-current="page" href="#" title="Buscar"><i class="bi bi-search"></i><span class="d-none d-sm-inline ms-1"></span></a>
-                            <a class="nav-link active px-2" aria-current="page" href="#" title="Mi cuenta"><i class="bi bi-person"></i><span class="d-none d-sm-inline ms-1"></span></a>
-                            <a class="nav-link active position-relative px-2" aria-current="page" href="#" title="Carrito">
-                                <i class="bi bi-bag"></i>
-                                <span class="position-absolute bottom-0 start-10 translate-middle p-2 bg-warning border border-white border-2 rounded-circle"></span>
-                                <span class="d-none d-sm-inline ms-1"></span>
-                            </a>
-                            <a class="nav-link active px-2" aria-current="page" href="#" title="Favoritos"><i class="bi bi-heart"></i><span class="d-none d-sm-inline ms-1"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <nav class="container border-top border-bottom border-dark border-2 py-4">
-                <ul class="nav justify-content-evenly">
-                    <li class="nav-item">
-                      <a class="nav-link text-black fw-bold" href="index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-black fw-bold" href="store.html">TIENDA</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-black fw-bold" href="mentions.html">CONTACTOS</a>
-                    </li>
-                  </ul>             
-            </nav>
-            <div id="service" class="container py-4 py-md-5">
-                <div class="row g-4 text-center">
-                    <div class="col-12 col-md-4 service-item">
-                        <a class="nav-link text-secondary fw-bold" href="#">
-                            <span class="text-warning d-block mb-2"><i id="camion" class="bi bi-truck fs-1"></i></span>
-                            <span class="d-block">ENVIO GRATIS</span>
-                            <small class="d-none d-md-block text-muted">En compras superiores a $50.000</small>
+        <!-- Barra de navegación superior con iconos -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-white">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html" aria-label="Inicio"> <!-- Añadido aria-label -->
+                    <img src="src/img/icono-reto.png" alt="Logo Urban Outfitters" style="width: 60px;"> <!-- Mejor texto alternativo -->
+                </a>
+                
+                <!-- Botón para menú móvil -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menú de iconos -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarID">
+                    <div class="navbar-nav fs-4 d-flex flex-row">
+                        <a class="nav-link active px-2" aria-current="page" href="#" title="Buscar" aria-label="Buscar"><i class="bi bi-search"></i><span class="d-none d-sm-inline ms-1"></span></a>
+                        <a class="nav-link active px-2" aria-current="page" href="#" title="Mi cuenta" aria-label="Mi cuenta"><i class="bi bi-person"></i><span class="d-none d-sm-inline ms-1"></span></a>
+                        <a class="nav-link active position-relative px-2" aria-current="page" href="#" title="Carrito" aria-label="Carrito de compras">
+                            <i class="bi bi-bag"></i>
+                            <span class="position-absolute bottom-0 start-10 translate-middle p-2 bg-warning border border-white border-2 rounded-circle"></span>
+                            <span class="d-none d-sm-inline ms-1"></span>
                         </a>
-                    </div>
-                    <div class="col-12 col-md-4 service-item">
-                        <a class="nav-link text-secondary fw-bold" href="#">
-                            <span class="text-warning d-block mb-2"><i id="tarjeta" class="bi bi-credit-card-2-front fs-1"></i></span>
-                            <span class="d-block">100% SIN INTERES</span>
-                            <small class="d-none d-md-block text-muted">Garantía de devolución de 30 días</small>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-4 service-item">
-                        <a class="nav-link text-secondary fw-bold" href="#">
-                            <span class="text-warning d-block mb-2"><i id="auricular" class="bi bi-headset fs-1"></i></span>
-                            <span class="d-block">SOPORTE 24/7</span>
-                            <small class="d-none d-md-block text-muted">Atención al cliente siempre disponible</small>
-                        </a>
+                        <a class="nav-link active px-2" aria-current="page" href="#" title="Favoritos" aria-label="Favoritos"><i class="bi bi-heart"></i><span class="d-none d-sm-inline ms-1"></span></a>
                     </div>
                 </div>
             </div>
+        </nav>
+        
+        <!-- Barra de navegación principal -->
+        <nav class="container border-top border-bottom border-dark border-2 py-4" aria-label="Navegación principal"> <!-- Añadido aria-label -->
+            <ul class="nav justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold" href="store.html">TIENDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold" href="mentions.html">CONTACTO</a>
+                </li>
+            </ul>             
+        </nav>
+        
+        <!-- Sección de servicios -->
+        <div id="service" class="container py-4 py-md-5">
+            <div class="row g-4 text-center">
+                <!-- Envío gratis -->
+                <div class="col-12 col-md-4 service-item">
+                    <a class="nav-link text-secondary fw-bold" href="#">
+                        <span class="text-warning d-block mb-2"><i id="camion" class="bi bi-truck fs-1" aria-hidden="true"></i></span>
+                        <span class="d-block">ENVIO GRATIS</span>
+                        <small class="d-none d-md-block text-muted">En compras superiores a $50.000</small>
+                    </a>
+                </div>
+                
+                <!-- Pago sin interés -->
+                <div class="col-12 col-md-4 service-item">
+                    <a class="nav-link text-secondary fw-bold" href="#">
+                        <span class="text-warning d-block mb-2"><i id="tarjeta" class="bi bi-credit-card-2-front fs-1" aria-hidden="true"></i></span>
+                        <span class="d-block">100% SIN INTERES</span>
+                        <small class="d-none d-md-block text-muted">Garantía de devolución de 30 días</small>
+                    </a>
+                </div>
+                
+                <!-- Soporte -->
+                <div class="col-12 col-md-4 service-item">
+                    <a class="nav-link text-secondary fw-bold" href="#">
+                        <span class="text-warning d-block mb-2"><i id="auricular" class="bi bi-headset fs-1" aria-hidden="true"></i></span>
+                        <span class="d-block">SOPORTE 24/7</span>
+                        <small class="d-none d-md-block text-muted">Atención al cliente siempre disponible</small>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
     <main>
-<!--foto grande con la oferta-->
+        <!-- Hero section - Oferta principal -->
         <section class="hero-section row m-0 justify-content-center align-items-center border border-dark border-2 py-4 py-lg-0" style="background-color: #DBD0CC;">
             <div id="Oferta" class="col-12 col-lg-6 text-center text-lg-start">
-                <img src="src/img/SILLON-DECO4.png" class="img-fluid w-75" alt="Oferta especial en muebles modernos">
+                <img src="src/img/SILLON-DECO4.png" class="img-fluid w-75" alt="Sillón moderno en oferta">
             </div>
             <div class="col-12 col-lg-6 text-center text-lg-start p-5">
                 <span class="fw-bold fs-4 d-block mb-2">OFERTA DE LA SEMANA</span>
                 <h1 style="color:#A86A3D" class="fw-bold py-3 display-4">EN VENTA 50% <br class="d-none d-lg-block">MUEBLES MODERNOS</h1>
-                <button type="button" class="btn btn-outline-dark btn-lg mt-3 fw-bold">Ver Ofertas</button>
+                <a type="button" class="btn btn-outline-dark btn-lg mt-3 fw-bold" href="store.html">Ver Ofertas</a>
             </div>   
         </section>
 
-<!--         <section class="container w-50 h-50 my-5">
-          <div class="row row-cols-1 row-cols-md-3 g-5">
-            <div class="col">
-              <div class="card h-100" style="background-color:#eae9e7;">
-                <img src="src/img/MESA-SILVIA-CUADRADA.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Mesa</h5>
-                  <p class="card-text">Las mas mejores mesas.</p>
+        <!-- Sección de productos destacados -->
+        <section class="container py-5" aria-label="Productos destacados"> <!-- Añadido aria-label -->
+            <div class="row g-4 justify-content-center">
+                <!-- Producto 1 - Mesa -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="product-card h-100 d-flex flex-column rounded-3 overflow-hidden shadow-sm" style="background-color: #eae9e7;">
+                        <div class="flex-grow-1 d-flex align-items-center p-3">
+                            <img src="src/img/MESA-SILVIA-CUADRADA.png" class="img-fluid mx-auto" alt="Mesa de algarrobo cuadrada" style="max-height: 250px;">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h2 class="fw-bold fs-5 mb-3">MESA ALGARROBO</h2> <!-- Cambiado h6 por h2 para jerarquía semántica -->
+                            <button type="button" class="btn btn-outline-dark fw-bold w-100">Ver Detalles</button>
+                        </div>
+                    </article>
                 </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">Last updated 3 mins ago</small>
+                
+                <!-- Producto 2 - Silla -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="product-card h-100 d-flex flex-column rounded-3 overflow-hidden shadow-sm" style="background-color: #DBD0dd;">
+                        <div class="flex-grow-1 d-flex align-items-center p-3">
+                            <img src="src/img/pampa-tiza-natural-1.png" class="img-fluid mx-auto" alt="Silla Pampa color natural" style="max-height: 250px;">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h2 class="fw-bold fs-5 mb-3">SILLA PAMPA</h2> <!-- Cambiado h6 por h2 -->
+                            <button type="button" class="btn btn-outline-dark fw-bold w-100">Ver Detalles</button>
+                        </div>
+                    </article>
                 </div>
-              </div>
+                
+                <!-- Producto 3 - Modular -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="product-card h-100 d-flex flex-column rounded-3 overflow-hidden shadow-sm" style="background-color: #eaeaea;">
+                        <div class="flex-grow-1 d-flex align-items-center p-3">
+                            <img src="src/img/modular.png" class="img-fluid mx-auto" alt="Mueble modular para living" style="max-height: 250px;">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h2 class="fw-bold fs-5 mb-3">MODULAR DE LIVING</h2> <!-- Cambiado h6 por h2 -->
+                            <button type="button" class="btn btn-outline-dark fw-bold w-100">Ver Detalles</button>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="col">
-              <div class="card h-100" style="background-color: #fafafa;">
-                <img src="src/img/pampa-tiza-natural-1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Silla</h5>
-                  <p class="card-text">Las mas mejores sillas.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100" style="background-color: #eaeaea;">
-                <img src="src/img/modular.png" class="card-img-top w-75" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Modular</h5>
-                  <p class="card-text">Los mas mejores modulares.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </section> -->
-<!--seccion de tarjetas con productos comunes-->        
-        <section class="container py-5">
-          <div class="row g-4 justify-content-center">
-            <!-- Producto 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="product-card h-100 d-flex flex-column rounded-3 overflow-hidden shadow-sm" style="background-color: #eae9e7;">
-                <div class="flex-grow-1 d-flex align-items-center p-3">
-                  <img src="src/img/MESA-SILVIA-CUADRADA.png" class="img-fluid mx-auto" alt="Mesa de algarrobo" style="max-height: 250px;">
-                </div>
-                <div class="p-4 text-center">
-                  <h6 class="fw-bold fs-5 mb-3">MESA ALGARROBO</h6>
-                  <button type="button" class="btn btn-outline-dark fw-bold w-100">Ver Detalles</button>
-                </div>
-              </article>
-            </div>
-            
-            <!-- Producto 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="product-card h-100 d-flex flex-column rounded-3 overflow-hidden shadow-sm" style="background-color: #DBD0dd;">
-                <div class="flex-grow-1 d-flex align-items-center p-3">
-                  <img src="src/img/pampa-tiza-natural-1.png" class="img-fluid mx-auto" alt="Silla Pampa" style="max-height: 250px;">
-                </div>
-                <div class="p-4 text-center">
-                  <h6 class="fw-bold fs-5 mb-3">SILLA PAMPA</h6>
-                  <button type="button" class="btn btn-outline-dark fw-bold w-100">Ver Detalles</button>
-                </div>
-              </article>
-            </div>
-            
-            <!-- Producto 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <article class="product-card h-100 d-flex flex-column rounded-3 overflow-hidden shadow-sm" style="background-color: #eaeaea;">
-                <div class="flex-grow-1 d-flex align-items-center p-3">
-                  <img src="src/img/modular.png" class="img-fluid mx-auto" alt="Mueble modular" style="max-height: 250px;">
-                </div>
-                <div class="p-4 text-center">
-                  <h6 class="fw-bold fs-5 mb-3">MODULAR DE LIVING</h6>
-                  <button type="button" class="btn btn-outline-dark fw-bold w-100">Ver Detalles</button>
-                </div>
-              </article>
-            </div>
-          </div>
         </section>
 
-<!--seccion cartelote-->
-        <section id="cartelote" class="row m-0 row-cols-2 position-relative ">
-          <img src="src/img/dormitorio1.png" class="w-100">
-          <div class="col-6 position-absolute p-2 rounded-3" style="background-color: #ffffffbb; max-width: 35%; bottom:20px;left:40px">
-              <span class="fw-bold fs-4">JUEGOS DE SÁBANAS</span>
-              <h4 style="color:#A86A3D" class="fw-bold py-3">$50.00 <span class="fs-6 text-decoration-line-through">$220.00</span></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.vel mollitia error laudantium at consectetur iure ea dolorem? Quidem.</p>
-              <button type="button" class="btn btn-outline-dark mt-3 fw-bold">Ver Ahora</button>
-          </div>   
+        <!-- Sección de oferta especial -->
+        <section id="cartelote" class="row m-0 row-cols-2 position-relative" aria-label="Oferta de juegos de sábanas"> <!-- Añadido aria-label -->
+            <img src="src/img/dormitorio1.png" class="w-100" alt="Dormitorio con juego de sábanas">
+            <div class="col-6 position-absolute p-2 rounded-3" style="background-color: #ffffffbb; max-width: 35%; bottom:20px;left:40px">
+                <span class="fw-bold fs-4">JUEGOS DE SÁBANAS</span>
+                <h3 style="color:#A86A3D" class="fw-bold py-3">$50.00 <span class="fs-6 text-decoration-line-through">$220.00</span></h3> <!-- Cambiado h4 por h3 -->
+                <p>Juegos de sábanas de alta calidad en oferta especial. Disponible en varios colores y tamaños.</p> <!-- Texto descriptivo real -->
+                <button type="button" class="btn btn-outline-dark mt-3 fw-bold">Ver Ahora</button>
+            </div>   
         </section>
         <hr>
-
-<!--menciones-->
-        <!-- <section class="container w-75 h-50 my-5">
-          <div class="container p-5">
-            <h1 class="text-center">MENCIONES</h1>
-            <hr>
-            <div class="row row-cols-3">
-              <p>participantes en el reto numero 4 de programacion ITEC Rio Cuarto</p>
-              <p>un reto que consiste en realizar una pagina desde cero y copiarla con otro framework diferente y bla bla bla...</p>
-
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores doloribus beatae minus nemo nostrum ad ipsum incidunt veniam non ullam dolor, vel et vitae facilis fugit accusamus amet aliquid exercitationem.</p>
-            </div>
-          </div>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
-            <div class="col">
-              <div class="card h-100 align-items-center">
-                <img src="src/img/fran.jpg" class="card-img-top rounded-circle w-75 m-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Francisco <br>Ambrogio</h5>
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Ver Mas
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">UX/UI</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 align-items-center">
-                <img src="src/img/fede.jpg" class="card-img-top rounded-circle w-75 m-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Federico <br>Arballo</h5>
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Ver Mas
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">Backend</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 align-items-center">
-                <img src="src/img/eman.jpg" class="card-img-top rounded-circle w-75 m-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Emanuel <br>Cepeda Caceres</h5>
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Ver Mas
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">FrontEnd</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 align-items-center">
-                <img src="src/img/rafa.jpg" class="card-img-top rounded-circle w-75 m-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Joaquin <br>Rodriguez</h5>
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Ver Mas
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary">DataBase</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </section> -->
     </main>
+
+    <!-- ========== FOOTER ========== -->
     <footer class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-5 bg-dark text-white p-2 position-relative">
-        <div id="link-primary" class="col-12 col-md-4 p-4">
-          <h3 class="my-5">URBAN OUTFITTERS</h3>
-          <p class="d-block py-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+        <div class="row row-cols-1 row-cols-md-5 bg-dark text-white p-2 position-relative">
+            <!-- Columna 1 - Información de la empresa -->
+            <div id="link-primary" class="col-12 col-md-4 p-4">
+                <h3 class="my-5">URBAN OUTFITTERS</h3>
+                <p class="d-block py-3 text-secondary">Tienda de muebles modernos y decoración para el hogar con las mejores ofertas y calidad garantizada.</p>
 
-          <h6 class="my-3 py-1">Constitución 716, X5800 Río Cuarto, Córdoba, Argentina</h6>
-            <h6>+543584643036</h6> 
-            <h6 class="pb-5">itecriocuarto.org.ar</h6>
-          <div class="links d-flex justify-content-between pe-5 pt-5 mt-5">
-            <a class="text-white" href=""><i class="bi bi-facebook"></i></a>
-            <a class="text-white" href=""><i class="bi bi-twitter"></i></a>
-            <a class="text-white" href=""><i class="bi bi-instagram"></i></a>
-            <a class="text-white" href=""><i class="bi bi-youtube"></i></a>
-          </div>
-
+                <address class="my-3 py-1"> <!-- Etiqueta semántica address -->
+                    Constitución 716, X5800 Río Cuarto, Córdoba, Argentina<br>
+                    Tel: +543584643036<br>
+                    Email: itecriocuarto.org.ar
+                </address>
+                
+                <!-- Redes sociales -->
+                <div class="links d-flex justify-content-between pe-5 pt-5 mt-5">
+                    <a class="text-white" href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a class="text-white" href="#" aria-label="Twitter"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+                    <a class="text-white" href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="text-white" href="#" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            
+            <!-- Columna 2 - Enlaces de compras -->
+            <div id="more-link" class="col-2 p-4">
+                <h5 class="my-5">SHOPPING</h5>
+                <ul class="list-unstyled"> <!-- Lista semántica -->
+                    <li><a href="#" class="text-secondary text-decoration-none">Tu carrito</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Tus pedidos</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Productos comparados</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Lista de deseos</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Detalles de envío</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 3 - Más enlaces -->
+            <div id="more-link" class="col-2 p-4">
+                <h5 class="my-5">MÁS ENLACES</h5>
+                <ul class="list-unstyled"> <!-- Lista semántica -->
+                    <li><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Centro de regalos</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Guías de compra</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Nuevos productos</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Liquidación</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 4 - Blog -->
+            <div id="more-link" class="col-4 p-4">
+                <h5 class="my-5">DESDE EL BLOG</h5>
+                <article> <!-- Etiqueta semántica article -->
+                    <time datetime="2023-05-26" class="fs-2 text-secondary">26</time><span class="text-secondary"> Mayo</span>
+                    <p class="d-block py-3 text-secondary">Nueva colección de muebles modernos inspirados en diseños escandinavos.</p>
+                    <span class="text-secondary">3 comentarios</span>
+                </article>
+                <hr>
+                <article> <!-- Etiqueta semántica article -->
+                    <time datetime="2023-05-27" class="fs-2 text-secondary">27</time><span  class="text-secondary"> Mayo</span>
+                    <p class="d-block py-3 text-secondary">Cómo combinar muebles modernos con estilos clásicos en tu hogar.</p>
+                    <span class="text-secondary">3 comentarios</span>
+                </article>
+            </div>
         </div>
-        <div id="more-link" class="col-2 p-4">
-          <h5 class="my-5">SHOPPING</h5>
-          <p class="text-secondary">Your cart</p>
-          <p class="text-secondary">your orders</p>
-          <p class="text-secondary">Compared items</p>
-          <p class="text-secondary">Wishlist items</p>
-          <p class="text-secondary">Shiping details</p>
-        </div>
-        <div id="more-link" class="col-2 p-4">
-          <h5 class="my-5">MORE LINK</h5>
-          <p class="text-secondary">Blog</p>
-          <p class="text-secondary">Gift Center</p>
-          <p class="text-secondary">Buying Guides</p>
-          <p class="text-secondary">New Arrivals</p>
-          <p class="text-secondary">Clearance</p>
-        </div>
-        <div id="more-link" class="col-4 p-4">
-          <h5 class="my-5">FROM THE BLOG</h5>
-          <span class="fs-2 text-secondary">26</span><span class="text-secondary"> May</span>
-          <p class="d-block py-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
-          <span class="text-secondary">3 comments</span>
-          <hr>
-          <span class="fs-2 text-secondary">27</span><span  class="text-secondary"> May</span>
-          <p class="d-block py-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
-          <span class="text-secondary">3 comments</span>
-
-        </div>
-      </div>
-        
-        
-
-
-
-
-
-
     </footer>
     
+    <!-- Script de Bootstrap bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
