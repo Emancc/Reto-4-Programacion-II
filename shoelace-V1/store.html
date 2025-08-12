@@ -1,175 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Muebles</title>
+    <title>Tienda - Urban Outfitters</title> 
     
-    <!-- Shoelace CSS and JS -->
+    <!-- Shoelace CSS y JS - Framework de componentes web -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace.js"></script>
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/styles.css"> 
 </head>
 <body>
-    <!-- Header -->
+    <!-- ========== HEADER ========== -->
     <header class="container">
-        <!-- Top Navigation -->
-        <nav class="navbar">
+        <!-- Barra de navegación superior -->
+        <nav class="navbar" aria-label="Navegación principal">
             <div class="navbar-content">
-                <a href="#" class="navbar-brand">
-                    <img src="/Bootstrap/src/img/icono-reto.png" alt="Logo">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                    <img src="src/img/icono-reto.png" alt="Logo Urban Outfitters"> 
                 </a>
+                
+                <!-- Iconos de navegación -->
                 <div class="navbar-icons">
-                    <sl-icon name="search" title="Buscar"></sl-icon>
-                    <sl-icon name="person" title="Mi cuenta"></sl-icon>
+                    <sl-icon name="search" title="Buscar" aria-label="Buscar"></sl-icon>
+                    <sl-icon name="person" title="Mi cuenta" aria-label="Mi cuenta"></sl-icon>
                     <div class="cart-badge">
-                        <sl-icon name="bag" title="Carrito"></sl-icon>
+                        <sl-icon name="bag" title="Carrito" aria-label="Carrito de compras"></sl-icon>
                     </div>
-                    <sl-icon name="heart" title="Favoritos"></sl-icon>
+                    <sl-icon name="heart" title="Favoritos" aria-label="Favoritos"></sl-icon>
                 </div>
             </div>
         </nav>
 
-        <!-- Main Navigation -->
-        <nav class="main-nav">
+        <!-- Navegación principal -->
+        <nav class="main-nav" aria-label="Menú principal">
             <sl-tab-group class="menu">
-                <sl-tab slot="nav" ><a href="index.html">INICIO</a></sl-tab>
-                <sl-tab slot="nav" ><a href="store.html">TIENDA</a></sl-tab>
-                <sl-tab slot="nav" ><a href="mentions.html">CONTACTO</a></sl-tab>
+                <sl-tab slot="nav" panel="inicio"><a href="index.html">INICIO</a></sl-tab>
+                <sl-tab slot="nav" panel="tienda"><a href="store.html">TIENDA</a></sl-tab>
+                <sl-tab slot="nav" panel="contacto"><a href="mentions.html">CONTACTO</a></sl-tab>
             </sl-tab-group>
         </nav>
     </header>
 
+    <!-- ========== MAIN CONTENT ========== -->
     <main>
-         <!-- Store Section -->
-    <section class="container">
+        <!-- Sección de Tienda -->
+        <section class="container" aria-labelledby="store-heading">
+            <h1 id="store-heading">TIENDA</h1>
+            
+            <sl-divider style="margin-bottom: var(--sl-spacing-large);"></sl-divider>
 
-        <h1>STORE</h1>
-        
-        <sl-divider style="margin-bottom: var(--sl-spacing-large);"></sl-divider>
-
-        <!-- Products Grid -->
-        <div class="products-grid">
-            <div class="card-principal">
-                <h5>DECOR</h5>
-                <p>
-                    Lorem ipsum dolor halkjhlka haoñiuhja lojsloñaiha  okhalk ñlkhjalña kjhal lkahjl  sit  ullam minima uiloqui sdñolakhsa aspojua asooasp p`sadlkj  quibusdamste veniam minima neque consectetur, veritatis quam! Ipsam nihil optio ratione voluptas.
-                </p>
-                <sl-button variant="default" outline>VIEW ALL</sl-button>
-            </div>
-                
-            <sl-card class="card-overview">
-                <img
-                slot="image"
-                src="./src/img/sillon.png"
-                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
-                />
-            
-                <strong>Sillon</strong><br />
-                This kitten is as cute as he is playful. Bring him home today!<br />
-                <small>6 weeks old</small>
-            
-                <div slot="footer">
-                <sl-button variant="primary" pill>More Info</sl-button>
-                <sl-rating></sl-rating>
-                </div>
-            </sl-card>
-
-            <sl-card class="card-overview">
-                <img
-                slot="image"
-                src="./src/img/cuadros.webp"
-                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
-                />
-            
-                <strong>Cuadros</strong><br />
-                This kitten is as cute as he is playful. Bring him home today!<br />
-                <small>6 weeks old</small>
-            
-                <div slot="footer">
-                <sl-button variant="primary" pill>More Info</sl-button>
-                <sl-rating></sl-rating>
-                </div>
-            </sl-card>
-
-            <sl-card class="card-overview">
-                <img
-                slot="image"
-                src="./src/img/jarron-flores.png"
-                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
-                />
-            
-                <strong>Jarron de flores</strong><br />
-                This kitten is as cute as he is playful. Bring him home today!<br />
-                <small>6 weeks old</small>
-            
-                <div slot="footer">
-                <sl-button variant="primary" pill>More Info</sl-button>
-                <sl-rating></sl-rating>
-                </div>
-            </sl-card>
-
-            <sl-card class="card-overview">
-                <img
-                slot="image"
-                src="./src/img/saco.png"
-                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
-                />
-            
-                <strong>Saco</strong><br />
-                This kitten is as cute as he is playful. Bring him home today!<br />
-                <small>6 weeks old</small>
-            
-                <div slot="footer">
-                <sl-button variant="primary" pill>More Info</sl-button>
-                <sl-rating></sl-rating>
-                </div>
-            </sl-card>
-
-            <sl-card class="card-overview">
-                <img
-                slot="image"
-                src="./src/img/mesita-luz.webp"
-                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
-                />
-            
-                <strong>Mesita de luz</strong><br />
-                This kitten is as cute as he is playful. Bring him home today!<br />
-                <small>6 weeks old</small>
-            
-                <div slot="footer">
-                <sl-button variant="primary" pill>More Info</sl-button>
-                <sl-rating></sl-rating>
-                </div>
-            </sl-card>
-
-            <sl-card class="card-overview">
-                <img
-                slot="image"
-                src="./src/img/mate.webp"
-                alt="A kitten sits patiently between a terracotta pot and decorative grasses."
-                />
-            
-                <strong>Mate</strong><br />
-                This kitten is as cute as he is playful. Bring him home today!<br />
-                <small>6 weeks old</small>
-            
-                <div slot="footer">
-                <sl-button variant="primary" pill>More Info</sl-button>
-                <sl-rating></sl-rating>
-                </div>
-            </sl-card>
-
-            <div class="card-principal card-clients">
-                    <h5>OUR CLIENTS</h5>
+            <!-- Grid de Productos -->
+            <div class="products-grid" role="list">
+                <!-- Tarjeta Decoración -->
+                <article class="card-principal" role="listitem" aria-labelledby="decor-heading">
+                    <h2 id="decor-heading">DECORACIÓN</h2>
                     <p>
-                        Lorem ipsum dolor halkjhlka haoñiuhja lojsloñaiha  okhalk ñlkhjalña kjhal lkahjl  sit  ullam minima uiloqui sdñolakhsa aspojua asooasp p`sadlkj  quibusdamste veniam minima neque consectetur, veritatis quam! Ipsam nihil optio ratione voluptas.
-                    </p>
-                    <sl-button variant="default" outline>VIEW ALL</sl-button>
-            </div>
-        </div>
+                        Descubre nuestra exclusiva colección de artículos de decoración para darle un toque único a tu hogar. 
+                        Desde cuadros modernos hasta jarrones artesanales.
+                    </p> <!-- Texto descriptivo real -->
+                    <sl-button variant="default" outline>VER TODOS</sl-button>
+                </article>
+                
+                <!-- Producto 1 - Sillón -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/sillon.png"
+                    alt="Sillón moderno en tela gris con diseño ergonómico"
+                    />
+                
+                    <strong>Sillón Moderno</strong><br />
+                    Diseño contemporáneo con estructura de madera maciza y tapizado en tela resistente.<br />
+                    <small>Disponible en 3 colores</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="4"></sl-rating> <!-- Valoración específica -->
+                    </div>
+                </sl-card>
 
-    </section>
+                <!-- Producto 2 - Cuadros -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/cuadros.webp"
+                    alt="Set de 3 cuadros abstractos para decoración de pared"
+                    />
+                
+                    <strong>Cuadros Decorativos</strong><br />
+                    Set de 3 cuadros con diseño abstracto, marco negro y vidrio protector.<br />
+                    <small>Medidas: 40x60cm cada uno</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="5"></sl-rating>
+                    </div>
+                </sl-card>
+
+                <!-- Producto 3 - Jarrón -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/jarron-flores.png"
+                    alt="Jarrón de cerámica artesanal color terracota"
+                    />
+                
+                    <strong>Jarrón de Flores</strong><br />
+                    Jarrón artesanal de cerámica con acabado rústico, ideal para centros de mesa.<br />
+                    <small>Altura: 35cm</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="4"></sl-rating>
+                    </div>
+                </sl-card>
+
+                <!-- Producto 4 - Saco -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/saco.png"
+                    alt="Saco tejido a mano en lana natural color beige"
+                    />
+                
+                    <strong>Saco Tejido</strong><br />
+                    Tejido artesanalmente con lana 100% natural, perfecto para decorar tu sofá o cama.<br />
+                    <small>Material: Lana merino</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="4.5"></sl-rating>
+                    </div>
+                </sl-card>
+
+                <!-- Producto 5 - Mesita -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/mesita-luz.webp"
+                    alt="Mesita de luz moderna en madera de roble"
+                    />
+                
+                    <strong>Mesita de Luz</strong><br />
+                    Diseño minimalista con cajón incorporado y patas metálicas. Acabado en roble natural.<br />
+                    <small>Medidas: 50x50x40cm</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="4"></sl-rating>
+                    </div>
+                </sl-card>
+
+                <!-- Producto 6 - Mate -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/mate.webp"
+                    alt="Set de mate premium con bombilla de alpaca"
+                    />
+                
+                    <strong>Set de Mate</strong><br />
+                    Incluye mate de calabaza curada, bombilla de alpaca y termo forrado en cuero.<br />
+                    <small>Hecho a mano</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="5"></sl-rating>
+                    </div>
+                </sl-card>
+
+                <!-- Tarjeta Clientes -->
+                <article class="card-principal card-clients" role="listitem" aria-labelledby="clients-heading">
+                    <h2 id="clients-heading">NUESTROS CLIENTES</h2>
+                    <p>
+                        Lo que dicen nuestros clientes satisfechos sobre la calidad de nuestros productos 
+                        y servicio de atención personalizada.
+                    </p>
+                    <sl-button variant="default" outline>VER OPINIONES</sl-button>
+                </article>
+            </div>
+        </section>
 
         <sl-divider></sl-divider>
     </main>
@@ -227,5 +239,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

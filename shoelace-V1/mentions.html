@@ -1,143 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambiado a español ya que el contenido está en español -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Muebles</title>
+    <title>Menciones - Urban Outfitters</title> <!-- Título más descriptivo -->
     
-    <!-- Shoelace CSS and JS -->
+    <!-- Shoelace CSS y JS - Framework de componentes web -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace.js"></script>
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/styles.css"> <!-- Estilos personalizados -->
 </head>
 <body>
-    <!-- Header -->
+    <!-- ========== HEADER ========== -->
     <header class="container">
-        <!-- Top Navigation -->
-        <nav class="navbar">
+        <!-- Barra de navegación superior -->
+        <nav class="navbar" aria-label="Navegación principal">
             <div class="navbar-content">
-                <a href="#" class="navbar-brand">
-                    <img src="src/img/icono-reto.png" alt="Logo">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                    <img src="src/img/icono-reto.png" alt="Logo Urban Outfitters"> <!-- Texto alternativo mejorado -->
                 </a>
+                
+                <!-- Iconos de navegación -->
                 <div class="navbar-icons">
-                    <sl-icon name="search" title="Buscar"></sl-icon>
-                    <sl-icon name="person" title="Mi cuenta"></sl-icon>
+                    <sl-icon name="search" title="Buscar" aria-label="Buscar"></sl-icon>
+                    <sl-icon name="person" title="Mi cuenta" aria-label="Mi cuenta"></sl-icon>
                     <div class="cart-badge">
-                        <sl-icon name="bag" title="Carrito"></sl-icon>
+                        <sl-icon name="bag" title="Carrito" aria-label="Carrito de compras"></sl-icon>
                     </div>
-                    <sl-icon name="heart" title="Favoritos"></sl-icon>
+                    <sl-icon name="heart" title="Favoritos" aria-label="Favoritos"></sl-icon>
                 </div>
             </div>
         </nav>
 
-        <!-- Main Navigation -->
-        <nav class="main-nav">
+        <!-- Navegación principal -->
+        <nav class="main-nav" aria-label="Menú principal">
             <sl-tab-group class="menu">
-                <sl-tab slot="nav" ><a href="index.html">INICIO</a></sl-tab>
-                <sl-tab slot="nav" ><a href="store.html">TIENDA</a></sl-tab>
-                <sl-tab slot="nav" ><a href="mentions.html">CONTACTO</a></sl-tab>
+                <sl-tab slot="nav" panel="inicio"><a href="index.html">INICIO</a></sl-tab>
+                <sl-tab slot="nav" panel="tienda"><a href="store.html">TIENDA</a></sl-tab>
+                <sl-tab slot="nav" panel="contacto"><a href="mentions.html">CONTACTO</a></sl-tab>
             </sl-tab-group>
         </nav>
     </header>
 
+    <!-- ========== MAIN CONTENT ========== -->
     <main>
-            <!-- Menciones Section -->
-    <section class="container">
-            <h1>MENCIONES</h1>
+        <!-- Sección de Menciones -->
+        <section class="container" aria-labelledby="mentions-heading">
+            <h1 id="mentions-heading">MENCIONES</h1>
             
             <sl-divider style="margin-bottom: var(--sl-spacing-large);"></sl-divider>
 
-        <!-- Team Cards -->
-        <div class="products-grid">
-            <!-- Francisco Ambrogio -->
-            <sl-card class="mention-cards">
-                <img class="mention-img" src="src/img/fran.jpg" alt="Francisco Ambrogio">
-                
-                <div class="mention-text">
-                    <h5>Francisco<br>Ambrogio</h5>
+            <!-- Grid de tarjetas de equipo -->
+            <div class="products-grid" role="list"> <!-- role="list" para mejor accesibilidad -->
+                <!-- Tarjeta 1 - Francisco Ambrogio -->
+                <sl-card class="mention-cards" role="listitem">
+                    <img class="mention-img" src="src/img/fran.jpg" alt="Francisco Ambrogio - Especialista en UX/UI">
                     
-                    <sl-details summary="Ver Mas" style="margin-bottom: var(--sl-spacing-medium);">
-                        <p style="margin-bottom: var(--sl-spacing-medium);">
-                            Placeholder content for this accordion, which is intended to demonstrate the accordion functionality. This is Francisco's information.
-                        </p>
-                        <sl-button variant="text" href="https://workspace.google.com/intl/es-419_ar/gmail/" target="_blank">
-                            Francisco@gmail.com
-                        </sl-button>
-                    </sl-details>
-                </div>
-                
-                <div slot="footer" class="mention-footer">
-                    <small style="color: var(--sl-color-neutral-600);">UX/UI</small>
-                </div>
-            </sl-card>
+                    <div class="mention-text">
+                        <h2>Francisco<br>Ambrogio</h2> <!-- Cambiado h5 por h2 para mejor jerarquía -->
+                        
+                        <sl-details summary="Ver más" style="margin-bottom: var(--sl-spacing-medium);">
+                            <p style="margin-bottom: var(--sl-spacing-medium);">
+                                Especialista en diseño de experiencia de usuario e interfaces. Apasionado por crear productos digitales accesibles y fáciles de usar.
+                            </p>
+                            <sl-button variant="text" href="mailto:francisco@example.com" target="_blank">
+                                Contactar a Francisco
+                            </sl-button>
+                        </sl-details>
+                    </div>
+                    
+                    <div slot="footer" class="mention-footer">
+                        <small style="color: var(--sl-color-neutral-600);">UX/UI</small>
+                    </div>
+                </sl-card>
 
-            <!-- Federico Arballo -->
-            <sl-card class="mention-cards">
-                <img class="mention-img" src="src/img/fede.jpg" alt="Federico Arballo">
-                
-                <div class="mention-text">
-                    <h5>Federico<br>Arballo</h5>
+                <!-- Tarjeta 2 - Federico Arballo -->
+                <sl-card class="mention-cards" role="listitem">
+                    <img class="mention-img" src="src/img/fede.jpg" alt="Federico Arballo - Especialista en Backend">
                     
-                    <sl-details summary="Ver Mas" style="margin-bottom: var(--sl-spacing-medium);">
-                        <p style="margin-bottom: var(--sl-spacing-medium);">
-                            Placeholder content for this accordion, which is intended to demonstrate the accordion functionality. This is Federico's information.
-                        </p>
-                        <sl-button variant="text" href="https://workspace.google.com/intl/es-419_ar/gmail/" target="_blank">
-                            Federico@gmail.com
-                        </sl-button>
-                    </sl-details>
-                </div>
-                
-                <div slot="footer" class="mention-footer">
-                    <small style="color: var(--sl-color-neutral-600);">Backend</small>
-                </div>
-            </sl-card>
+                    <div class="mention-text">
+                        <h2>Federico<br>Arballo</h2>
+                        
+                        <sl-details summary="Ver más" style="margin-bottom: var(--sl-spacing-medium);">
+                            <p style="margin-bottom: var(--sl-spacing-medium);">
+                                Desarrollador backend con experiencia en sistemas escalables y arquitecturas de microservicios. Especializado en Node.js y bases de datos.
+                            </p>
+                            <sl-button variant="text" href="mailto:federico@example.com" target="_blank">
+                                Contactar a Federico
+                            </sl-button>
+                        </sl-details>
+                    </div>
+                    
+                    <div slot="footer" class="mention-footer">
+                        <small style="color: var(--sl-color-neutral-600);">Backend</small>
+                    </div>
+                </sl-card>
 
-            <!-- Emanuel Cepeda Caceres -->
-            <sl-card class="mention-cards">
-                <img class="mention-img" src="src/img/eman.jpg" alt="Emanuel Cepeda Caceres">
-                
-                <div class="mention-text">
-                    <h5>Emanuel<br>Cepeda Caceres</h5>
+                <!-- Tarjeta 3 - Emanuel Cepeda Caceres -->
+                <sl-card class="mention-cards" role="listitem">
+                    <img class="mention-img" src="src/img/eman.jpg" alt="Emanuel Cepeda Caceres - Especialista en Frontend">
                     
-                    <sl-details summary="Ver Mas" style="margin-bottom: var(--sl-spacing-medium);">
-                        <p style="margin-bottom: var(--sl-spacing-medium);">
-                            Placeholder content for this accordion, which is intended to demonstrate the accordion functionality. This is Emanuel's information.
-                        </p>
-                        <sl-button variant="text" href="https://workspace.google.com/intl/es-419_ar/gmail/" target="_blank">
-                            Emanuel@gmail.com
-                        </sl-button>
-                    </sl-details>
-                </div>
-                
-                <div slot="footer" class="mention-footer">
-                    <small style="color: var(--sl-color-neutral-600);">FrontEnd</small>
-                </div>
-            </sl-card>
+                    <div class="mention-text">
+                        <h2>Emanuel<br>Cepeda Caceres</h2>
+                        
+                        <sl-details summary="Ver más" style="margin-bottom: var(--sl-spacing-medium);">
+                            <p style="margin-bottom: var(--sl-spacing-medium);">
+                                Desarrollador frontend con enfoque en accesibilidad y performance. Experto en frameworks modernos como React y Vue.
+                            </p>
+                            <sl-button variant="text" href="mailto:emanuel@example.com" target="_blank">
+                                Contactar a Emanuel
+                            </sl-button>
+                        </sl-details>
+                    </div>
+                    
+                    <div slot="footer" class="mention-footer">
+                        <small style="color: var(--sl-color-neutral-600);">FrontEnd</small>
+                    </div>
+                </sl-card>
 
-            <!-- Joaquin Rodriguez -->
-            <sl-card class="mention-cards">
-                <img class="mention-img" src="src/img/rafa.jpg" alt="Joaquin Rodriguez" >
-                
-                <div class="mention-text" style="flex: 1; padding: 0 var(--sl-spacing-medium);">
-                    <h5>Joaquin<br>Rodriguez</h5>
+                <!-- Tarjeta 4 - Joaquin Rodriguez -->
+                <sl-card class="mention-cards" role="listitem">
+                    <img class="mention-img" src="src/img/rafa.jpg" alt="Joaquin Rodriguez - Especialista en Base de Datos">
                     
-                    <sl-details summary="Ver Mas" style="margin-bottom: var(--sl-spacing-medium);">
-                        <p style="margin-bottom: var(--sl-spacing-medium);">
-                            Placeholder content for this accordion, which is intended to demonstrate the accordion functionality. This is Joaquin's information.
-                        </p>
-                        <sl-button variant="text" href="https://workspace.google.com/intl/es-419_ar/gmail/" target="_blank">
-                            Joaquin@gmail.com
-                        </sl-button>
-                    </sl-details>
-                </div>
-                
-                <div slot="footer" class="mention-footer">
-                    <small style="color: var(--sl-color-neutral-600);">DataBase</small>
-                </div>
-            </sl-card>
-        </div>
-    </section>
+                    <div class="mention-text" style="flex: 1; padding: 0 var(--sl-spacing-medium);">
+                        <h2>Joaquin<br>Rodriguez</h2>
+                        
+                        <sl-details summary="Ver más" style="margin-bottom: var(--sl-spacing-medium);">
+                            <p style="margin-bottom: var(--sl-spacing-medium);">
+                                Experto en diseño y optimización de bases de datos relacionales y NoSQL. Especializado en PostgreSQL y MongoDB.
+                            </p>
+                            <sl-button variant="text" href="mailto:joaquin@example.com" target="_blank">
+                                Contactar a Joaquin
+                            </sl-button>
+                        </sl-details>
+                    </div>
+                    
+                    <div slot="footer" class="mention-footer">
+                        <small style="color: var(--sl-color-neutral-600);">DataBase</small>
+                    </div>
+                </sl-card>
+            </div>
+        </section>
 
         <sl-divider></sl-divider>
     </main>
@@ -195,5 +199,7 @@
             </div>
         </div>
     </footer>
+
+
 </body>
 </html>

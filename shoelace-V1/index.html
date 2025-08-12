@@ -1,59 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambiado a español ya que el contenido parece estar en español -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Muebles</title>
+    <title>Venta de Muebles - Urban Outfitters</title> <!-- Título más descriptivo -->
     
-    <!-- Shoelace CSS and JS -->
+    <!-- Shoelace CSS y JS - Framework de componentes web -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace.js"></script>
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/styles.css"> <!-- Estilos personalizados -->
 </head>
 <body>
-    <!-- Header -->
+    <!-- ========== HEADER ========== -->
     <header class="container">
-        <!-- Top Navigation -->
-        <nav class="navbar">
+        <!-- Barra de navegación superior -->
+        <nav class="navbar" aria-label="Navegación principal"> <!-- Añadido aria-label para accesibilidad -->
             <div class="navbar-content">
-                <a href="#" class="navbar-brand">
-                    <img src="/Bootstrap/src/img/icono-reto.png" alt="Logo">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                    <img src="/Bootstrap/src/img/icono-reto.png" alt="Logo Urban Outfitters"> <!-- Texto alternativo mejorado -->
                 </a>
+                
+                <!-- Iconos de navegación -->
                 <div class="navbar-icons">
-                    <sl-icon name="search" title="Buscar"></sl-icon>
-                    <sl-icon name="person" title="Mi cuenta"></sl-icon>
+                    <sl-icon name="search" title="Buscar" aria-label="Buscar"></sl-icon>
+                    <sl-icon name="person" title="Mi cuenta" aria-label="Mi cuenta"></sl-icon>
                     <div class="cart-badge">
-                        <sl-icon name="bag" title="Carrito"></sl-icon>
+                        <sl-icon name="bag" title="Carrito" aria-label="Carrito de compras"></sl-icon>
                     </div>
-                    <sl-icon name="heart" title="Favoritos"></sl-icon>
+                    <sl-icon name="heart" title="Favoritos" aria-label="Favoritos"></sl-icon>
                 </div>
             </div>
         </nav>
 
-        <!-- Main Navigation -->
-        <nav class="main-nav">
+        <!-- Navegación principal -->
+        <nav class="main-nav" aria-label="Menú principal">
             <sl-tab-group class="menu">
-                <sl-tab slot="nav" ><a href="index.html">INICIO</a></sl-tab>
-                <sl-tab slot="nav" ><a href="store.html">TIENDA</a></sl-tab>
-                <sl-tab slot="nav" ><a href="mentions.html">CONTACTO</a></sl-tab>
+                <sl-tab slot="nav" panel="inicio"><a href="index.html">INICIO</a></sl-tab> <!-- Añadido panel para accesibilidad -->
+                <sl-tab slot="nav" panel="tienda"><a href="store.html">TIENDA</a></sl-tab>
+                <sl-tab slot="nav" panel="contacto"><a href="mentions.html">CONTACTO</a></sl-tab>
             </sl-tab-group>
         </nav>
 
-        <!-- Services Section -->
-        <div class="services-section">
+        <!-- Sección de servicios -->
+        <div class="services-section" aria-labelledby="services-heading">
             <div class="services-grid">
-                <a href="#" class="service-item">
-                    <sl-animation name="bounce" duration="2000" play><sl-icon class="icono" name="truck"></sl-icon></sl-animation>
+                <!-- Servicio 1 - Envío gratis -->
+                <a href="#" class="service-item" aria-label="Envío gratis">
+                    <sl-animation name="bounce" duration="2000" play>
+                        <sl-icon class="icono" name="truck" aria-hidden="true"></sl-icon>
+                    </sl-animation>
                     <span>ENVIO GRATIS</span>
                     <small>En compras superiores a $50.000</small>
                 </a>
-                <a href="#" class="service-item">
-                    <sl-animation name="jello" duration="2000" play><sl-icon class="icono" name="credit-card-2-front"></sl-icon></sl-animation>
+                
+                <!-- Servicio 2 - Sin interés -->
+                <a href="#" class="service-item" aria-label="Pago sin interés">
+                    <sl-animation name="jello" duration="2000" play>
+                        <sl-icon class="icono" name="credit-card-2-front" aria-hidden="true"></sl-icon>
+                    </sl-animation>
                     <span>100% SIN INTERES</span>
                     <small>Garantía de devolución de 30 días</small>
                 </a>
-                <a href="#" class="service-item">
-                    <sl-animation name="flip" duration="2000" play><sl-icon class="icono" name="headset"></sl-icon></sl-animation>
+                
+                <!-- Servicio 3 - Soporte -->
+                <a href="#" class="service-item" aria-label="Soporte 24/7">
+                    <sl-animation name="flip" duration="2000" play>
+                        <sl-icon class="icono" name="headset" aria-hidden="true"></sl-icon>
+                    </sl-animation>
                     <span>SOPORTE 24/7</span>
                     <small>Atención al cliente siempre disponible</small>
                 </a>
@@ -61,72 +75,72 @@
         </div>
     </header>
 
+    <!-- ========== MAIN CONTENT ========== -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero-section">
+        <!-- Sección Hero - Oferta principal -->
+        <section class="hero-section" aria-labelledby="hero-heading">
             <div class="hero-image">
-                <img src="/Bootstrap/src/img/SILLON-DECO4.png" alt="Oferta especial en muebles modernos">
+                <img src="/Bootstrap/src/img/SILLON-DECO4.png" alt="Sillón moderno en oferta especial">
             </div>
             <div class="hero-content">
                 <span class="offer-label">OFERTA DE LA SEMANA</span>
-                <h1>EN VENTA 50%<br>MUEBLES MODERNOS</h1>
+                <h1 id="hero-heading">EN VENTA 50%<br>MUEBLES MODERNOS</h1>
                 <sl-button variant="dark" size="large" outline>Ver Ofertas</sl-button>
             </div>
         </section>
 
-        <!-- Products Section -->
-        <section class="container" style="padding: var(--sl-spacing-3x-large) 0">
+        <!-- Sección de Productos -->
+        <section class="container" style="padding: var(--sl-spacing-3x-large) 0" aria-labelledby="products-heading">
             <div style="
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 gap: var(--sl-spacing-large);
             ">
-                <!-- Product 1 -->
+                <!-- Producto 1 - Mesa -->
                 <sl-card class="product-card card-1">
                     <div class="product-image">
                         <img src="/Bootstrap/src/img/MESA-SILVIA-CUADRADA.png" 
-                        alt="Mesa de algarrobo" style="max-width: 100%; max-height: 250px; object-fit: contain;">
+                        alt="Mesa de algarrobo cuadrada" style="max-width: 100%; max-height: 250px; object-fit: contain;">
                     </div>
                     <div class="product-info">
-                        <h6>MESA ALGARROBO</h6>
+                        <h3>MESA ALGARROBO</h3> <!-- Cambiado h6 por h3 para mejor jerarquía -->
                         <sl-button variant="dark" outline size="large">Ver Detalles</sl-button>
                     </div>
                 </sl-card>
 
-                <!-- Product 2 -->
+                <!-- Producto 2 - Silla -->
                 <sl-card class="product-card card-2">
                     <div class="product-image">
                         <img src="/Bootstrap/src/img/pampa-tiza-natural-1.png" 
-                        alt="Silla Pampa" style="max-width: 100%; max-height: 250px; object-fit: contain;">
+                        alt="Silla Pampa color natural" style="max-width: 100%; max-height: 250px; object-fit: contain;">
                     </div>
                     <div class="product-info">
-                        <h6>SILLA PAMPA</h6>
+                        <h3>SILLA PAMPA</h3>
                         <sl-button variant="dark" outline size="large">Ver Detalles</sl-button>
                     </div>
                 </sl-card>
 
-                <!-- Product 3 -->
+                <!-- Producto 3 - Modular -->
                 <sl-card class="product-card card-3">
                     <div class="product-image">
                         <img src="/Bootstrap/src/img/modular.png" 
-                        alt="Mueble modular" style="max-width: 100%; max-height: 250px; object-fit: contain;">
+                        alt="Mueble modular para living" style="max-width: 100%; max-height: 250px; object-fit: contain;">
                     </div>
-
                     <div class="product-info">
-                        <h6>MODULAR DE LIVING</h6>
+                        <h3>MODULAR DE LIVING</h3>
                         <sl-button variant="dark" outline size="large">Ver Detalles</sl-button>
                     </div>
                 </sl-card>
             </div>
         </section>
 
-        <!-- Promotional Section -->
-        <section class="promo-section">
-            <img src="/Bootstrap/src/img/dormitorio1.png" alt="Dormitorio" class="promo-image">
+        <!-- Sección Promocional -->
+        <section class="promo-section" aria-labelledby="promo-heading">
+            <img src="/Bootstrap/src/img/dormitorio1.png" alt="Dormitorio con juego de sábanas en oferta" class="promo-image">
             <div class="promo-content">
                 <span>JUEGOS DE SÁBANAS</span>
-                <h4>$50.00 <span class="original-price">$220.00</span></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel mollitia error laudantium at consectetur iure ea dolorem? Quidem.</p>
+                <h3 id="promo-heading">$50.00 <span class="original-price">$220.00</span></h3> <!-- Cambiado h4 por h3 -->
+                <p>Juegos de sábanas de alta calidad en oferta especial. Disponible en varios colores y tamaños.</p> <!-- Texto descriptivo real -->
                 <sl-button variant="dark" outline style="margin-top: 1rem;">Ver Ahora</sl-button>
             </div>
         </section>
@@ -187,5 +201,7 @@
             </div>
         </div>
     </footer>
+
+
 </body>
 </html>
